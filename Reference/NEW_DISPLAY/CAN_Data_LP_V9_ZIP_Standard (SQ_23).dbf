@@ -1,0 +1,1104 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.0.0]
+[NUMBER_OF_MESSAGES] 40
+
+[START_MSG] New_Message_40,3,8,1,1,S,
+[START_SIGNALS] New_Signal_434,8,1,0,U,255,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] New_Message_39,2,8,1,1,S,
+[START_SIGNALS] New_Signal_433,8,1,0,U,255,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] New_Message_38,1,8,1,1,S,
+[START_SIGNALS] New_Signal_432,8,1,7,U,255,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] New_Message_37,0,8,1,1,S,
+[START_SIGNALS] New_Signal_431,8,7,7,U,255,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] Battery_response_heartbeat,483,8,0,1,S,
+[END_MSG]
+
+[START_MSG] Battery_suspension_message3,1314,8,0,1,S,
+[END_MSG]
+
+[START_MSG] Battery_live_message2,1313,8,0,1,S,
+[END_MSG]
+
+[START_MSG] Battery_live_messgae1,1312,8,0,1,S,
+[END_MSG]
+
+[START_MSG] SOC_threshold_data,419377106,8,8,0,X,
+[START_SIGNALS] Parallel_On_Flag,8,8,0,U,255,0,0,0,1,,,
+[START_SIGNALS] CC_CV_voltage_offset3,8,7,0,U,255,0,0,0,1,,,
+[START_SIGNALS] CC_CV_voltage_offset2,8,6,0,U,255,0,0,0,1,,,
+[START_SIGNALS] CC_CV_voltage_offset1,8,5,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Reserve_Enable,8,4,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Reserved_SOC,8,3,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] Set_DoD,8,2,0,U,255,0,0,0,1,%,,
+[START_SIGNALS] SOC_Enable,8,1,0,U,255,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] Parallel_BMS_Data1,419376850,8,5,0,X,
+[START_SIGNALS] parallel_recovery_delta_MAX,16,6,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] parallel_pack_delta_threshold,8,4,0,U,255,0,0,0,1,,,
+[START_SIGNALS] parallel_pack_delta_MAX,16,8,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] battery_capacity,8,3,0,U,255,0,0,0,1,Ah,,
+[START_SIGNALS] Parallel_Battery_ID,16,2,0,U,65535,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] Parallel_BMS_data,419376594,8,7,0,X,
+[START_SIGNALS] Current,16,2,0,I,32767,-32768,0,0,0.01,A,,
+[START_SIGNALS] CAN_Comm_flag,8,8,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Parallel_pack_delta,16,6,0,I,32767,-32768,0,0,1,mV,,
+[START_SIGNALS] bms_state,4,7,0,U,15,0,0,0,1,,,
+[START_SIGNALS] Numbr_battery_connect,3,7,4,U,7,0,0,0,1,,,
+[START_SIGNALS] parallel_battery_flag,1,7,7,B,1,0,0,0,1,,,
+[START_SIGNALS] Total_cell_voltage,16,4,0,U,65535,0,0,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] temp_0,418377736,8,0,1,X,
+[END_MSG]
+
+[START_MSG] CELLS_TEMPERATURE_INFO,418370823,8,4,0,X,
+[START_SIGNALS] Temperature_4,16,8,0,I,32767,-32767,0,0,0.1,C,,
+[START_SIGNALS] Temperature_3,16,6,0,I,32767,-32767,0,0,0.1,C,,
+[START_SIGNALS] Temperature_2,16,4,0,I,32767,-32767,0,0,0.1,C,,
+[START_SIGNALS] Temperature_1,16,2,0,I,32767,-32767,0,0,0.1,C,,
+[END_MSG]
+
+[START_MSG] CELLS_VOLTAGE_ID4,418370567,8,4,0,X,
+[START_SIGNALS] Cell_voltage_15,16,8,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_14,16,6,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_13,16,4,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_12,16,2,0,I,32767,0,0,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] CELLS_VOLTAGE_ID3,418370311,8,4,0,X,
+[START_SIGNALS] Cell_voltage_11,16,8,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_10,16,6,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_9,16,4,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_8,16,2,0,I,32767,0,0,0,0.001,,,
+[END_MSG]
+
+[START_MSG] CELLS_VOLTAGE_ID2,418370055,8,4,0,X,
+[START_SIGNALS] Cell_voltage_7,16,8,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_6,16,6,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_5,16,4,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_4,16,2,0,I,32767,0,0,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] CELLS_VOLTAGE_ID1,418369799,8,4,0,X,
+[START_SIGNALS] Cell_voltage_3,16,8,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_2,16,6,0,I,32767,0,0,0,0.001,v,,
+[START_SIGNALS] Cell_voltage_1,16,4,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_0,16,2,0,I,32767,0,0,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] MOTOVOLT_FRAME,418369544,8,5,1,X,
+[START_SIGNALS] reserve_40_bits,40,4,0,U,549755813887,0,1,0,1,,,
+[START_SIGNALS] Reserved_6bit,6,3,2,U,63,0,1,0,1,,,
+[START_SIGNALS] Delta_Cell_Error_Flag,1,3,1,B,1,0,1,0,1,,,
+[START_SIGNALS] Delta_Cell_Warning_Flag,1,3,0,B,1,0,1,0,1,,,
+[START_SIGNALS] Delta_Cell_Voltage_Limit,16,2,0,U,65535,0,0,0,1,mV,,
+[END_MSG]
+
+[START_MSG] BMS_ID,419376593,8,8,0,X,
+[START_SIGNALS] char_at_seq_id_x_7_plus_6,8,8,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_5,8,7,0,I,127,-128,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_4,8,6,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_3,8,5,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_2,8,4,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_1,8,3,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] char_at_seq_id_x_7_plus_0,8,2,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] M_ID_BMS_ID,8,1,0,U,255,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] Enegy_Info,412496485,8,2,0,X,
+[START_SIGNALS] unlastCap,32,8,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] reserve_32,32,4,0,U,4294967295,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] THERMAL_RUNAWAY_ERROR,419384272,8,1,1,X,
+[START_SIGNALS] Thermal_Runaway_Error,2,1,0,U,3,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] LP_HeartBeat,419398276,8,11,1,X,
+[START_SIGNALS] SOC_disp_CAN,16,2,0,U,65535,0,0,0,0.01,%,,
+[START_SIGNALS] Current_Battery,16,7,0,I,32767,-32768,1,0,0.1,A,,
+[START_SIGNALS] Voltage_Battery,8,6,0,U,255,0,1,0,1,V,,
+[START_SIGNALS] SoC_Less_Than_5Per_Error,1,5,6,B,1,0,1,0,1,,,
+[START_SIGNALS] SoC_Less_Than_10Per_Error,1,5,5,B,1,0,1,0,1,,,
+[START_SIGNALS] Battery_Pack_Not_Connected_Error,1,5,4,B,1,0,1,0,1,,,
+[START_SIGNALS] Undertemperature_Error,1,5,3,B,1,0,1,0,1,,,
+[START_SIGNALS] Overtemperature_Error,1,5,2,B,1,0,1,0,1,,,
+[START_SIGNALS] Undervoltage_Error,1,5,1,B,1,0,1,0,1,,,
+[START_SIGNALS] Overvoltage_Error,1,5,0,B,1,0,1,0,1,,,
+[START_SIGNALS] Available_Energy,16,3,0,U,65535,0,1,0,1,wh,,
+[END_MSG]
+
+[START_MSG] HARDWARE_VERSION_NUMBER,419383504,1,1,1,X,
+[START_SIGNALS] Hardware_Version_Number,8,1,0,U,255,0,1,0,1,,,
+[END_MSG]
+
+[START_MSG] STATE_OF_OVERLOAD_INFO,419380688,8,2,0,X,
+[START_SIGNALS] State_of_overload_value,32,8,0,F,3.4e+038,0,0,0,1,A^2 s,,
+[START_SIGNALS] State_of_overload_running_thresh,32,4,0,F,3.4e+038,0,0,0,1,A^2 s,,
+[END_MSG]
+
+[START_MSG] LP_CHARGER_SETPOINT,419364955,8,5,1,X,
+[START_SIGNALS] Reserved_24bit,24,6,0,U,16777215,0,1,0,1,,,
+[START_SIGNALS] Charger_1_Output_Current_SetPt,16,4,0,U,65500,0,1,0,0.01,A,,
+[START_SIGNALS] Charger_1_Output_Voltage_SetPt,16,2,0,U,64255,0,1,0,0.05,V,,
+[START_SIGNALS] Reserved_6bit,6,1,2,U,63,0,1,0,1,,,
+[START_SIGNALS] Charger_1_Chargr_Status_from_BMS,2,1,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "Enabled (charger active)",1
+[VALUE_DESCRIPTION] "Disable (charger inactive)",0
+[END_MSG]
+
+[START_MSG] LP_CHARGER_TO_BMS,285021466,8,6,1,X,
+[START_SIGNALS] Reserved_24bit,24,6,0,U,16777215,0,1,0,1,,,
+[START_SIGNALS] Bat_Chgr_1_Output_Current,16,4,0,U,64255,0,1,-1600,0.05,A,,
+[START_SIGNALS] Bat_Chgr_1_Output_Voltage,16,2,0,U,64255,0,1,0,0.05,V,,
+[START_SIGNALS] Reserved_2bit,2,1,6,U,3,0,1,0,1,,,
+[START_SIGNALS] Bat_Chgr_1_Pwrline_State,2,1,4,U,2,0,1,0,1,,,
+[VALUE_DESCRIPTION] "Error ",2
+[VALUE_DESCRIPTION] "Connected.",1
+[VALUE_DESCRIPTION] "Disconnected.",0
+[START_SIGNALS] Bat_Chgr_1_State,4,1,0,U,14,0,1,0,1,,,
+[VALUE_DESCRIPTION] "Charger failure.",14
+[VALUE_DESCRIPTION] "Battery failure.",13
+[VALUE_DESCRIPTION] "Reserved",12
+[VALUE_DESCRIPTION] "Reserved",11
+[VALUE_DESCRIPTION] "Reserved",10
+[VALUE_DESCRIPTION] "Reserved",9
+[VALUE_DESCRIPTION] "Reserved",8
+[VALUE_DESCRIPTION] "Reserved",7
+[VALUE_DESCRIPTION] "Reserved",6
+[VALUE_DESCRIPTION] "Reserved",5
+[VALUE_DESCRIPTION] "Reserved",4
+[VALUE_DESCRIPTION] "Reserved",3
+[VALUE_DESCRIPTION] "Stand-by or maintaining charge.",2
+[VALUE_DESCRIPTION] "Charging the battery.",1
+[VALUE_DESCRIPTION] "Idling state",0
+[END_MSG]
+
+[START_MSG] VOLTAGE_INFO,419365328,8,3,0,X,
+[START_SIGNALS] Battery_Voltage,32,4,0,I,214748370,0,0,0,0.01,V,,
+[START_SIGNALS] Min_Voltage,16,6,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Max_Voltage,16,8,0,I,32767,0,0,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] CURRENT,419365584,6,2,0,X,
+[START_SIGNALS] Current,16,6,0,I,32767,-32768,0,0,0.01,A,,
+[START_SIGNALS] Battery_Current,32,4,0,F,3.4e+038,-3.4e+038,0,0,1,A,,
+[END_MSG]
+
+[START_MSG] TEMPERATURE_INFO_CELL,419365840,6,3,0,X,
+[START_SIGNALS] Temperature_Cell_Min,16,2,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Temperature_Cell_Max,16,4,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Temperature_Cell_Mean,16,6,0,I,32767,-32768,0,0,0.1,°C,,
+[END_MSG]
+
+[START_MSG] BATTERY_STATE,419366352,8,4,0,X,
+[START_SIGNALS] warranty_status,8,4,0,U,255,0,0,0,1,,,
+[START_SIGNALS] SOC_disp_CAN,16,2,0,U,65535,0,0,0,0.01,%,,
+[START_SIGNALS] Equivalent_Cycle,32,8,0,F,3.4e+038,0,0,0,1,,,
+[START_SIGNALS] State_of_Health,8,3,0,U,100,0,0,0,1,%,,
+[END_MSG]
+
+[START_MSG] BMS_EVENT_INFO,419366864,4,27,0,X,
+[START_SIGNALS] High_SoC_Indication,1,4,2,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "Threshold is breached",1
+[VALUE_DESCRIPTION] "Threshold is not breached",0
+[START_SIGNALS] Low_SoC_Indication_2,1,4,1,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "Threshold is breached",1
+[VALUE_DESCRIPTION] "Threshold is not breached",0
+[START_SIGNALS] Low_SoC_Indication_1,1,4,0,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "Threshold is breached",1
+[VALUE_DESCRIPTION] "Threshold is not breached",0
+[START_SIGNALS] Is_fan_driven,1,3,7,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Is_heater_driven,1,3,6,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] No_error_detected,1,3,1,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Sd_init_flag,1,3,0,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Sd_conf_file_param_error,1,2,7,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Sd_conf_file_opening_error,1,2,6,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Unused_1bit,1,2,5,B,1,0,0,0,1,,,
+[START_SIGNALS] power_3V3_state,1,2,4,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] External_power_supply_state,1,2,3,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Configuration_loaded,1,2,2,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Needs_balancing,1,2,1,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Is_running_state,1,2,0,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] BLE_wake_up_request,1,1,7,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Start_request,1,1,6,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Isolated_input_1_state,1,1,5,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Isolated_input_0_state,1,1,4,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_fan,1,1,3,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_charge,1,1,2,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_discharge,1,1,1,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_precharge,1,1,0,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_emergency,1,3,2,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_heater_Plus,1,3,3,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Power_channel_heater_minus,1,3,4,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Low_SoC_Warning,1,3,5,B,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[END_MSG]
+
+[START_MSG] BUILD_INFO,419368400,8,2,0,X,
+[START_SIGNALS] BMS_MAC_Address,48,8,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Build_number,16,2,0,I,32767,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] VOLTAGES_CELL,419377360,8,4,0,X,
+[START_SIGNALS] Cell_voltage_at_Index_plus_2,16,8,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_at_Index_plus_1,16,6,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Cell_voltage_at_Index_plus_0,16,4,0,I,32767,0,0,0,0.001,V,,
+[START_SIGNALS] Index_of_cell,16,2,0,I,32767,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] TEMPERATURE_CELLS,419377616,8,4,0,X,
+[START_SIGNALS] Temperature_at_NTC_index_plus_2,16,8,0,I,32767,-32768,0,0,0.1,C,,
+[START_SIGNALS] Temperature_at_NTC_index_plus_1,16,6,0,I,32767,-32768,0,0,0.1,C,,
+[START_SIGNALS] Temperature_at_NTC_index_plus_0,16,4,0,I,32767,-32768,0,0,0.1,C,,
+[START_SIGNALS] NTC_Index,16,2,0,I,32767,0,0,0,1,,,
+[END_MSG]
+
+[START_MSG] BATTERY_CAPACITY,419378128,8,3,0,X,
+[START_SIGNALS] AvailableCapacity,16,2,0,U,65535,0,0,0,0.01,Ah,,
+[START_SIGNALS] Initial_batt_capacity,32,8,0,F,3.4e+038,0,0,0,1,Ah,,
+[START_SIGNALS] Initial_batt_capacity_data_type,16,4,0,I,4,3,0,0,1,#,,
+[VALUE_DESCRIPTION] "NO_TYPE",5
+[VALUE_DESCRIPTION] "FLOAT",4
+[VALUE_DESCRIPTION] "UINT32/INT32",3
+[VALUE_DESCRIPTION] "UINT16/INT16",2
+[VALUE_DESCRIPTION] "STRING",1
+[VALUE_DESCRIPTION] "BOOL",0
+[END_MSG]
+
+[START_MSG] BATTERY_SERIAL_NUMBER,419376592,8,8,0,X,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_6,8,8,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_5,8,7,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_4,8,6,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_3,8,5,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_2,8,4,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_1,8,3,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Char_at_seq_number_x_7_plus_0,8,2,0,U,255,0,0,0,1,ASCII,,
+[START_SIGNALS] Sequence_number,8,1,0,U,5,1,0,-1,1,#,,
+[END_MSG]
+
+[START_MSG] ERROR_INFO,419369168,8,12,0,X,
+[START_SIGNALS] Slot4_Error_Reserved,7,8,0,U,127,0,0,0,1,,,
+[START_SIGNALS] Slot3_Error_Reserved,7,6,0,U,127,0,0,0,1,,,
+[START_SIGNALS] Slot2_Error_Reserved,7,4,0,U,127,0,0,0,1,,,
+[START_SIGNALS] Slot1_Error_Reserved,7,2,0,U,127,0,0,0,1,,,
+[START_SIGNALS] Slot4_Error_State,3,8,7,U,7,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_WARNING",6
+[VALUE_DESCRIPTION] "WAR_ERR_IN_WARNING",5
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_WARNING",4
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_ERROR",3
+[VALUE_DESCRIPTION] "WAR_ERR_IN_ERROR",2
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_ERROR",1
+[VALUE_DESCRIPTION] "WAR_ERR_NONE",0
+[START_SIGNALS] Slot3_Error_State,3,6,7,U,7,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_WARNING",6
+[VALUE_DESCRIPTION] "WAR_ERR_IN_WARNING",5
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_WARNING",4
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_ERROR",3
+[VALUE_DESCRIPTION] "WAR_ERR_IN_ERROR",2
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_ERROR",1
+[VALUE_DESCRIPTION] "WAR_ERR_NONE",0
+[START_SIGNALS] Slot2_Error_State,3,4,7,U,7,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_WARNING",6
+[VALUE_DESCRIPTION] "WAR_ERR_IN_WARNING",5
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_WARNING",4
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_ERROR",3
+[VALUE_DESCRIPTION] "WAR_ERR_IN_ERROR",2
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_ERROR",1
+[VALUE_DESCRIPTION] "WAR_ERR_NONE",0
+[START_SIGNALS] Slot4_Error_Id,6,7,2,U,63,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "JSON Parser Error",34
+[VALUE_DESCRIPTION] "Charge Open Detected",33
+[VALUE_DESCRIPTION] "Discharge Open Detected",32
+[VALUE_DESCRIPTION] "Charge Weld Detected",31
+[VALUE_DESCRIPTION] "Discharge Weld Detected",30
+[VALUE_DESCRIPTION] "Charger Authentication Failure",29
+[VALUE_DESCRIPTION] "Unauthorised Charger Detected",28
+[VALUE_DESCRIPTION] "Precharge Incomplete",27
+[VALUE_DESCRIPTION] "Precharge Load Not Detected",26
+[VALUE_DESCRIPTION] "Cell Temperature Imbalance",25
+[VALUE_DESCRIPTION] "High Humidity Error",24
+[VALUE_DESCRIPTION] "MSD Error",23
+[VALUE_DESCRIPTION] "Association Error",22
+[VALUE_DESCRIPTION] "Safety Fuse Triggered",21
+[VALUE_DESCRIPTION] "Insulation Monitoring Error",20
+[VALUE_DESCRIPTION] "Variable Type Mismatch",19
+[VALUE_DESCRIPTION] "Interlock Error",18
+[VALUE_DESCRIPTION] "Precharge Error",17
+[VALUE_DESCRIPTION] "Data Corrupted",16
+[VALUE_DESCRIPTION] "Date Validation Error",15
+[VALUE_DESCRIPTION] "PDU Lock",14
+[VALUE_DESCRIPTION] "Encryption Error (Deprecated)",13
+[VALUE_DESCRIPTION] "PDU Over Temperature",12
+[VALUE_DESCRIPTION] "PDU Failure",11
+[VALUE_DESCRIPTION] "Open Connection (Deprecated)",10
+[VALUE_DESCRIPTION] "Switchbox Error (Deprecated)",9
+[VALUE_DESCRIPTION] "Current Value Outdated",8
+[VALUE_DESCRIPTION] "Board Values Outdated",7
+[VALUE_DESCRIPTION] "BMS Data Outdated",6
+[VALUE_DESCRIPTION] "Current Short Circuit",5
+[VALUE_DESCRIPTION] "Overload",4
+[VALUE_DESCRIPTION] "Under Temperature",3
+[VALUE_DESCRIPTION] "Over Temperature",2
+[VALUE_DESCRIPTION] "Under Voltage",1
+[VALUE_DESCRIPTION] "Over Voltage",0
+[START_SIGNALS] Slot3_Error_Id,6,5,2,U,63,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "JSON Parser Error",34
+[VALUE_DESCRIPTION] "Charge Open Detected",33
+[VALUE_DESCRIPTION] "Discharge Open Detected",32
+[VALUE_DESCRIPTION] "Charge Weld Detected",31
+[VALUE_DESCRIPTION] "Discharge Weld Detected",30
+[VALUE_DESCRIPTION] "Charger Authentication Failure",29
+[VALUE_DESCRIPTION] "Unauthorised Charger Detected",28
+[VALUE_DESCRIPTION] "Precharge Incomplete",27
+[VALUE_DESCRIPTION] "Precharge Load Not Detected",26
+[VALUE_DESCRIPTION] "Cell Temperature Imbalance",25
+[VALUE_DESCRIPTION] "High Humidity Error",24
+[VALUE_DESCRIPTION] "MSD Error",23
+[VALUE_DESCRIPTION] "Association Error",22
+[VALUE_DESCRIPTION] "Safety Fuse Triggered",21
+[VALUE_DESCRIPTION] "Insulation Monitoring Error",20
+[VALUE_DESCRIPTION] "Variable Type Mismatch",19
+[VALUE_DESCRIPTION] "Interlock Error",18
+[VALUE_DESCRIPTION] "Precharge Error",17
+[VALUE_DESCRIPTION] "Data Corrupted",16
+[VALUE_DESCRIPTION] "Date Validation Error",15
+[VALUE_DESCRIPTION] "PDU Lock",14
+[VALUE_DESCRIPTION] "Encryption Error (Deprecated)",13
+[VALUE_DESCRIPTION] "PDU Over Temperature",12
+[VALUE_DESCRIPTION] "PDU Failure",11
+[VALUE_DESCRIPTION] "Open Connection (Deprecated)",10
+[VALUE_DESCRIPTION] "Switchbox Error (Deprecated)",9
+[VALUE_DESCRIPTION] "Current Value Outdated",8
+[VALUE_DESCRIPTION] "Board Values Outdated",7
+[VALUE_DESCRIPTION] "BMS Data Outdated",6
+[VALUE_DESCRIPTION] "Current Short Circuit",5
+[VALUE_DESCRIPTION] "Overload",4
+[VALUE_DESCRIPTION] "Under Temperature",3
+[VALUE_DESCRIPTION] "Over Temperature",2
+[VALUE_DESCRIPTION] "Under Voltage",1
+[VALUE_DESCRIPTION] "Over Voltage",0
+[START_SIGNALS] Slot2_Error_Id,6,3,2,U,63,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "JSON Parser Error",34
+[VALUE_DESCRIPTION] "Charge Open Detected",33
+[VALUE_DESCRIPTION] "Discharge Open Detected",32
+[VALUE_DESCRIPTION] "Charge Weld Detected",31
+[VALUE_DESCRIPTION] "Discharge Weld Detected",30
+[VALUE_DESCRIPTION] "Charger Authentication Failure",29
+[VALUE_DESCRIPTION] "Unauthorised Charger Detected",28
+[VALUE_DESCRIPTION] "Precharge Incomplete",27
+[VALUE_DESCRIPTION] "Precharge Load Not Detected",26
+[VALUE_DESCRIPTION] "Cell Temperature Imbalance",25
+[VALUE_DESCRIPTION] "High Humidity Error",24
+[VALUE_DESCRIPTION] "MSD Error",23
+[VALUE_DESCRIPTION] "Association Error",22
+[VALUE_DESCRIPTION] "Safety Fuse Triggered",21
+[VALUE_DESCRIPTION] "Insulation Monitoring Error",20
+[VALUE_DESCRIPTION] "Variable Type Mismatch",19
+[VALUE_DESCRIPTION] "Interlock Error",18
+[VALUE_DESCRIPTION] "Precharge Error",17
+[VALUE_DESCRIPTION] "Data Corrupted",16
+[VALUE_DESCRIPTION] "Date Validation Error",15
+[VALUE_DESCRIPTION] "PDU Lock",14
+[VALUE_DESCRIPTION] "Encryption Error (Deprecated)",13
+[VALUE_DESCRIPTION] "PDU Over Temperature",12
+[VALUE_DESCRIPTION] "PDU Failure",11
+[VALUE_DESCRIPTION] "Open Connection (Deprecated)",10
+[VALUE_DESCRIPTION] "Switchbox Error (Deprecated)",9
+[VALUE_DESCRIPTION] "Current Value Outdated",8
+[VALUE_DESCRIPTION] "Board Values Outdated",7
+[VALUE_DESCRIPTION] "BMS Data Outdated",6
+[VALUE_DESCRIPTION] "Current Short Circuit",5
+[VALUE_DESCRIPTION] "Overload",4
+[VALUE_DESCRIPTION] "Under Temperature",3
+[VALUE_DESCRIPTION] "Over Temperature",2
+[VALUE_DESCRIPTION] "Under Voltage",1
+[VALUE_DESCRIPTION] "Over Voltage",0
+[START_SIGNALS] Slot1_Error_State,3,2,7,U,7,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_WARNING",6
+[VALUE_DESCRIPTION] "WAR_ERR_IN_WARNING",5
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_WARNING",4
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_ERROR",3
+[VALUE_DESCRIPTION] "WAR_ERR_IN_ERROR",2
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_ERROR",1
+[VALUE_DESCRIPTION] "WAR_ERR_NONE",0
+[START_SIGNALS] Slot1_Error_Id,6,1,2,U,63,0,0,0,1,#,,
+[VALUE_DESCRIPTION] "JSON Parser Error",34
+[VALUE_DESCRIPTION] "Charge Open Detected",33
+[VALUE_DESCRIPTION] "Discharge Open Detected",32
+[VALUE_DESCRIPTION] "Charge Weld Detected",31
+[VALUE_DESCRIPTION] "Discharge Weld Detected",30
+[VALUE_DESCRIPTION] "Charger Authentication Failure",29
+[VALUE_DESCRIPTION] "Unauthorised Charger Detected",28
+[VALUE_DESCRIPTION] "Precharge Incomplete",27
+[VALUE_DESCRIPTION] "Precharge Load Not Detected",26
+[VALUE_DESCRIPTION] "Cell Temperature Imbalance",25
+[VALUE_DESCRIPTION] "High Humidity Error",24
+[VALUE_DESCRIPTION] "MSD Error",23
+[VALUE_DESCRIPTION] "Association Error",22
+[VALUE_DESCRIPTION] "Safety Fuse Triggered",21
+[VALUE_DESCRIPTION] "Insulation Monitoring Error",20
+[VALUE_DESCRIPTION] "Variable Type Mismatch",19
+[VALUE_DESCRIPTION] "Interlock Error",18
+[VALUE_DESCRIPTION] "Precharge Error",17
+[VALUE_DESCRIPTION] "Data Corrupted",16
+[VALUE_DESCRIPTION] "Date Validation Error",15
+[VALUE_DESCRIPTION] "PDU Lock",14
+[VALUE_DESCRIPTION] "Encryption Error (Deprecated)",13
+[VALUE_DESCRIPTION] "PDU Over Temperature",12
+[VALUE_DESCRIPTION] "PDU Failure",11
+[VALUE_DESCRIPTION] "Open Connection (Deprecated)",10
+[VALUE_DESCRIPTION] "Switchbox Error (Deprecated)",9
+[VALUE_DESCRIPTION] "Current Value Outdated",8
+[VALUE_DESCRIPTION] "Board Values Outdated",7
+[VALUE_DESCRIPTION] "BMS Data Outdated",6
+[VALUE_DESCRIPTION] "Current Short Circuit",5
+[VALUE_DESCRIPTION] "Overload",4
+[VALUE_DESCRIPTION] "Under Temperature",3
+[VALUE_DESCRIPTION] "Over Temperature",2
+[VALUE_DESCRIPTION] "Under Voltage",1
+[VALUE_DESCRIPTION] "Over Voltage",0
+[END_MSG]
+
+[START_MSG] PDU_TEMPARTURE_SENSING,419382992,2,1,0,X,
+[START_SIGNALS] PDU_Temperature_Data,16,2,0,I,32767,-32768,0,0,0.1,°C,,
+[END_MSG]
+
+[START_MSG] ENERGY_AVAILABLE,419383248,8,2,0,X,
+[START_SIGNALS] Energy_available_post_pdu_nw,32,8,0,U,4294967231,0,0,0,0.1,Wh,,
+[START_SIGNALS] Energy_available_own_battery,32,4,0,U,4294967231,0,0,0,0.1,Wh,,
+[END_MSG]
+
+[START_MSG] BMS_STATE,419381212,8,6,1,X,
+[START_SIGNALS] Charge_Cycle_Count,16,7,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] shortcircuit_OP_voltage,8,6,0,U,255,0,0,0,0.1,volt,,
+[START_SIGNALS] MOSFTE_Fail,8,5,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Status,8,1,0,U,255,0,1,0,1,,,
+[VALUE_DESCRIPTION] "CELL_DELTA_HIGH",13
+[VALUE_DESCRIPTION] "CHARGING AUTHENTICATION FAIL",12
+[VALUE_DESCRIPTION] "THERMAL_FAULT",11
+[VALUE_DESCRIPTION] "PERMANENT_FAULT",10
+[VALUE_DESCRIPTION] "MOSFET_FAULT",9
+[VALUE_DESCRIPTION] "FAULT_OT",8
+[VALUE_DESCRIPTION] "FAULT_SC",7
+[VALUE_DESCRIPTION] "FAULT_OCOVUV",6
+[VALUE_DESCRIPTION] "IGNITION-OFF",5
+[VALUE_DESCRIPTION] "CHARGED",4
+[VALUE_DESCRIPTION] "CHARGING",3
+[VALUE_DESCRIPTION] "DISCHARGED",2
+[VALUE_DESCRIPTION] "DISCHARGING",1
+[VALUE_DESCRIPTION] "RESET",0
+[START_SIGNALS] Delta_Cell,16,2,0,U,4500,0,1,0,1,mV,,
+[START_SIGNALS] Factory_capacity,8,4,0,U,255,0,1,0,1,Ah,,
+[END_MSG]
+
+[START_SIG_LIST]
+[START_SIGNALS] SOC_Cutoff,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] StartSOC,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] SOC_actual2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] SOC_actual1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] SOC_display2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] SOC_display1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] parallel_pack_delta_threshold,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Reserve_8_intel,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Zivan_Charger_Node,8,1,0,I,20,1,1,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_O,8,1,0,U,79,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_K,8,1,0,U,75,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_End_Of_Precharge,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_Charger_Node,8,1,0,I,20,1,1,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_O,8,1,0,U,79,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_K,8,1,0,U,75,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_End_Of_Precharge,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_RE_SDO_Subindex,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Index,16,1,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_4,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_3,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Command,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Subindex,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Index,16,1,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_4,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_3,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Command,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused_32_bit,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Hardware_Status,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Unused_32_bit,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Hardware_Status,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Output_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Output_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_RE_Capacity,16,1,0,U,65535,0,0,0,0.1,Ah,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Output_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Output_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_RE_Capacity,16,1,0,U,65535,0,0,0,0.1,Ah,,
+[START_SIGNALS] Reserved_2bit,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Voltage_Default,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Temperature_Default,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Software_Default,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Sector_Presence,1,1,0,B,1,0,1,0,1,,,
+[START_SIGNALS] Elips_Protocol_Version,5,1,0,U,31,0,0,0,1,,,
+[START_SIGNALS] Elips_Power,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Plug_Presence,1,1,0,B,1,0,1,0,1,,,
+[START_SIGNALS] Elips_Overcurrent_Default,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Output_Relay,1,1,0,B,1,0,1,0,1,,,
+[START_SIGNALS] Elips_Failure,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Elips_Electronic_Default,2,1,0,U,3,0,1,0,1,,,
+[START_SIGNALS] Unused_8bit,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] Elips_610_Trouble_Code,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] Elips_610_State,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] Elips_Measure_V_Tra,16,1,0,U,65280,0,0,0,0.00390625,V,,
+[START_SIGNALS] Elips_Measure_V_sec,16,1,0,U,4800,0,0,0,0.0625,V,,
+[START_SIGNALS] Elips_Measure_T_ch,16,1,0,U,65280,0,0,0,0.00390625,C,,
+[START_SIGNALS] Elips_Measure_I_Tra,16,1,0,I,32767,-32768,0,0,0.00390625,A,,
+[START_SIGNALS] Zivan_RE_SDO_Subindex,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Index,16,1,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_4,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_3,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Data_1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_SDO_Command,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused_16bit,16,1,0,I,32767,-32768,0,0,1,#,,
+[START_SIGNALS] Unused_32_bit,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Charging_Percentage,16,1,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] Zivan_Charger_Node,8,1,0,I,20,1,1,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_O,8,1,0,U,79,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Char_K,8,1,0,U,75,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_End_Of_Precharge,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Max_Prog_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Unused_16bit,16,1,0,I,32767,-32768,0,0,1,#,,
+[START_SIGNALS] Zivan_RE_Max_Chg_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Max_Chg_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_RE_Bat_Detect_Vol_Thr,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Unused_32_bit,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Hardware_Status,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Zivan_RE_Output_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Zivan_RE_Output_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Zivan_RE_Capacity,16,1,0,U,65535,0,0,0,0.1,Ah,,
+[START_SIGNALS] Vertiv_Sys_SoC,16,1,0,U,65535,0,0,0,0.01,%,,
+[START_SIGNALS] Vertiv_Sys_Max_Temperature,16,1,0,U,65535,0,0,0,0.1,C,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Vertiv_Sys_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Vertiv_Sys_Total_Current,16,1,0,I,32767,-32768,0,0,0.1,A,,
+[START_SIGNALS] Vertiv_Sys_Max_Charge_Current,16,1,0,I,32767,-32768,0,0,0.1,A,,
+[START_SIGNALS] Vertiv_Max_Bat_Temperature,16,1,0,U,65535,0,0,0,0.1,C,,
+[START_SIGNALS] Vertiv_Bat_SoC,16,1,0,U,65535,0,0,0,0.01,%,,
+[START_SIGNALS] Vertiv_Bat_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Vertiv_Bat_Max_Charge_Current,16,1,0,I,32767,-32768,0,0,0.1,A,,
+[START_SIGNALS] Vertiv_Bat_Current,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Vertiv_Bat_Alarm,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Ingeteam_Bat_Current,16,1,0,I,32767,-32767,0,0,1,A,,
+[START_SIGNALS] Ingeteam_Bat_Alarm,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused_8bit,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused_8bit,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Ingeteam_Bat_Temperature,8,1,0,U,255,0,0,0,1,C,,
+[START_SIGNALS] Ingeteam_Bat_Voltage,16,1,0,U,65535,0,0,0,0.01,V,,
+[START_SIGNALS] Ingeteam_Bat_SoH,8,1,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] Ingeteam_Bat_SoC,8,1,0,U,100,0,0,0,1,%,,
+[START_SIGNALS] Ingeteam_Max_Bat_Discharge_Curr,16,1,0,I,32767,0,0,0,1,A,,
+[START_SIGNALS] Ingeteam_Max_Bat_Charge_Current,16,1,0,I,32767,0,0,0,1,A,,
+[START_SIGNALS] Ingeteam_Bat_Discharge_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Ingeteam_Bat_Charge_Voltage,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Ingeteam_Counter,8,1,0,U,14,0,0,0,1,,,
+[START_SIGNALS] Ingeteam_State,8,1,0,U,7,0,0,0,1,,,
+[START_SIGNALS] Unused_8bit,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Elips_BMS_Control,1,1,0,B,1,0,0,0,1,,,
+[START_SIGNALS] Elips_Protocol_Version,5,1,0,U,31,0,0,0,1,,,
+[START_SIGNALS] Elips_HVBat_Failure,2,1,0,U,3,0,0,0,1,,,
+[START_SIGNALS] Elips_Charger_State_Command,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Elips_Charging_Voltage,16,1,0,U,65535,0,0,0,0.0625,V,,
+[START_SIGNALS] Elips_Charging_Current,16,1,0,U,65535,0,0,0,0.0625,A,,
+[START_SIGNALS] Elips_Max_Charging_Power,8,1,0,U,250,0,0,0,20,W,,
+[START_SIGNALS] Tork_Motor_Check_Data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused_8bit,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Tork_Motor_Charger_State,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Tork_Motor_Slave_Mode,8,1,0,I,127,-128,1,0,1,,,
+[START_SIGNALS] Tork_Motor_Voltage_Setpoint,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Tork_Motor_Current_Setpoint,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Tork_Motor_Charger_State,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Tork_Motor_Fault_Byte2,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Tork_Motor_Fault_Byte1,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Tork_Motor_Fault_Byte0,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Bassi_Voltage_Setpoint,16,1,0,U,16000,0,1,0,0.0625,V,,
+[START_SIGNALS] Bassi_Min_Discharge_Voltage,16,1,0,U,65535,0,1,0,1,V,,
+[START_SIGNALS] Bassi_Current_Setpoint,16,1,0,U,16000,0,1,0,0.0625,A,,
+[START_SIGNALS] Bassi_Discharging_Current,16,1,0,U,65535,0,1,0,16,A,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,1,0,1,,,
+[START_SIGNALS] Bassi_Battery_Status,8,1,0,U,6,1,1,0,1,,,
+[START_SIGNALS] Bassi_User_SoC,8,1,0,U,100,0,1,0,1,%,,
+[START_SIGNALS] Bassi_Battery_Voltage,16,1,0,U,16000,0,1,0,0.0625,V,,
+[START_SIGNALS] Bassi_Battery_Current,16,1,0,U,10000,0,1,0,0.0625,A,,
+[START_SIGNALS] Bassi_Charging_Time,16,1,0,U,32000,0,1,0,1,min,,
+[START_SIGNALS] Bassi_Charger_Reading_Current,16,1,0,U,6500,0,1,0,0.1,A,,
+[START_SIGNALS] Bassi_Charger_Reading_Voltage,16,1,0,U,6500,0,1,0,0.1,V,,
+[START_SIGNALS] Bassi_Charger_Exception,8,1,0,U,255,1,0,0,1,,,
+[START_SIGNALS] Bassi_Termination_Code,8,1,0,U,99,1,0,0,1,,,
+[START_SIGNALS] Bassi_Ping_Keep_Alive,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Bassi_Charger_ID,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Unused,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Dilong_Charger_BMS_Mode,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Charger_Control,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Charger_Voltage_Setpoint,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Charger_Current_Setpoint,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Dilong_Tc_Charger_Status,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Dilong_Tc_Charger_Reading_Curr,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Dilong_Tc_Charger_Reading_Volt,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Diag_Command_Response_Payload,48,1,0,U,140737488355327,0,0,0,1,,,
+[START_SIGNALS] Diag_Command_Response,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Diag_Command_Request_Payload,48,1,0,U,140737488355327,0,0,0,1,,,
+[START_SIGNALS] Diag_Command_Request,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Data_logging_Num_Bytes_to_Tx,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] BMS_WLAN_SSID,64,1,0,U,9223372036854775807,0,0,0,1,,,
+[START_SIGNALS] Application_failure_indication,8,1,0,U,9,0,0,0,1,,,
+[START_SIGNALS] Json_File_Num_Bytes_To_Tx,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Ack_Seq_Number,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Para_Sys_Peak_Dschg_Reco_Curr,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Para_Sys_Peak_Chg_Reco_Curr,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Controller_Timestamp,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] BMS_WLAN_SSID,64,1,0,U,9223372036854775807,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Ack_Seq_Number,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Acked_Num_Bytes,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] No_data,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Json_File_Target_File,8,1,0,U,3,1,0,0,1,,,
+[START_SIGNALS] Json_File_Request_type,8,1,0,U,2,1,0,0,1,,,
+[START_SIGNALS] Json_File_Num_Bytes_to_Rx,32,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] Heater_control,8,1,0,U,1,0,0,0,1,#,,
+[START_SIGNALS] Fan_control,8,1,0,U,1,0,0,0,1,#,,
+[START_SIGNALS] Thermal_control_token2,8,1,0,U,135,0,0,0,1,#,,
+[START_SIGNALS] Thermal_control_token1,8,1,0,U,118,0,0,0,1,#,,
+[START_SIGNALS] J1939_Timestamp_year,8,1,0,U,250,0,0,1985,1,,,
+[START_SIGNALS] J1939_Timestamp_month,8,1,0,U,12,1,0,0,1,,,
+[START_SIGNALS] J1939_Timestamp_day,8,1,0,U,127,1,0,0,0.25,,,
+[START_SIGNALS] J1939_Timestamp_hour,8,1,0,U,23,0,0,0,1,,,
+[START_SIGNALS] J1939_Timestamp_minute,8,1,0,U,59,0,0,0,1,,,
+[START_SIGNALS] J1939_Timestamp_second,8,1,0,U,239,0,0,0,0.25,,,
+[START_SIGNALS] Sensor_index,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Vmon_Measured_Value,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Vmon_High_value,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] Vmon_Low_value,16,1,0,U,65535,0,0,0,0.1,V,,
+[START_SIGNALS] smu_temperature_4,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] smu_temperature_3,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] smu_temperature_2,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] smu_temperature_1,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Start_request_type,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] Calendar_cycle_Aging,32,1,0,I,2147483647,-2147483648,0,0,1,%,,
+[START_SIGNALS] Aging1s,32,1,0,I,2147483647,-2147483648,0,0,1,%,,
+[START_SIGNALS] Unused_16bit,16,1,0,I,32767,-32768,0,0,1,#,,
+[START_SIGNALS] Sequence_number_of_the_board,16,1,0,U,65535,0,0,0,1,,,
+[START_SIGNALS] Board_total_voltage,32,1,0,U,2500,0,0,0,0.001,V,,
+[START_SIGNALS] Energy_Out,32,1,0,U,4294967295,0,0,0,1,W,,
+[START_SIGNALS] Energy_In,32,1,0,U,4294967295,0,0,0,1,W,,
+[START_SIGNALS] Battery_Peak_Dschg_Reco_Curr,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Battery_Peak_Chg_Reco_Curr,16,1,0,U,65535,0,0,0,0.1,A,,
+[START_SIGNALS] Load_current_recommendation,32,1,0,F,3.4e+038,0,0,0,1,A,,
+[START_SIGNALS] Temperature_internal_Mean,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Temperature_Internal_Max,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Temperature_Internal_Min,16,1,0,I,32767,-32768,0,0,0.1,°C,,
+[START_SIGNALS] Voltage_Dynamic,16,1,0,I,32767,-32768,0,0,0.001,V,,
+[START_SIGNALS] Charge_derated_current,16,1,0,U,65535,32000,1,-1600,0.05,A,,
+[START_SIGNALS] Discharge_derated_current,16,1,0,U,32000,0,1,-1600,0.05,A,,
+[START_SIGNALS] Ignition_Type,8,1,0,U,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "Charge Ignition",1
+[VALUE_DESCRIPTION] "Discharge Ignition",0
+[START_SIGNALS] CAN_Ignition,8,1,0,U,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[START_SIGNALS] Sleep_Activation,8,1,0,U,1,0,0,0,1,,,
+[VALUE_DESCRIPTION] "Deep sleep (BMS in sleep, BLE not discoverable)",1
+[VALUE_DESCRIPTION] "Sleep (BMS in sleep, BLE discoverable)",0
+[START_SIGNALS] Time_to_go_to_sleep,8,1,0,U,255,0,0,0,1,s,,
+[START_SIGNALS] Message_Token_1,8,1,0,U,119,0,0,0,1,,,
+[START_SIGNALS] Message_Token_2,8,1,0,U,170,0,0,0,1,,,
+[START_SIGNALS] Message_Token_3,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Relative_Humidity_Percentage,16,1,0,U,1000,0,0,0,0.1,%,,
+[START_SIGNALS] RESERVED_CHARGERCONFIG,48,1,0,U,4294967295,0,0,0,1,,,
+[START_SIGNALS] CRC_CHARGERCONFIG,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] BAUDRATE,8,1,0,U,1,0,0,0,1,,,
+[START_SIGNALS] SOC_Battery_Pack,16,1,0,U,65535,0,1,0,1,%,,
+[START_SIGNALS] State_of_Charge,16,1,0,I,10000,0,0,0,0.01,%,,
+[START_SIGNALS] New_Signal_423,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] New_Signal_422,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] New_Signal_421,8,1,0,U,255,0,1,0,1,,,
+[START_SIGNALS] Enable_SOC,8,1,0,U,255,0,0,0,1,,,
+[START_SIGNALS] Settable_SOC,8,1,0,U,255,0,0,0,1,,,
+[END_SIG_LIST]
+
+[START_VALUE_TABLE]
+[START_TABLE] FAULTS
+[VALUE_DESCRIPTION] "THERMAL_FAULT",17
+[VALUE_DESCRIPTION] "PERMANENT_FAULT",16
+[VALUE_DESCRIPTION] "MOSFET_FAULT",9
+[VALUE_DESCRIPTION] "FAULT_OT",8
+[VALUE_DESCRIPTION] "FAULT_SC",7
+[VALUE_DESCRIPTION] "FAULT_OCOVUV",6
+[VALUE_DESCRIPTION] "STATE_FAULT",5
+[VALUE_DESCRIPTION] "CHARGED",4
+[VALUE_DESCRIPTION] "CHARGING",3
+[VALUE_DESCRIPTION] "DISCHARGED",2
+[VALUE_DESCRIPTION] "DISCHARGING",1
+[VALUE_DESCRIPTION] "RESET",0
+[END_TABLE]
+[START_TABLE] ERROR_NAME
+[VALUE_DESCRIPTION] "Under Voltage",1
+[VALUE_DESCRIPTION] "Over Voltage",0
+[END_TABLE]
+[START_TABLE] Thermal_ctrl
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[END_TABLE]
+[START_TABLE] sleep_type
+[VALUE_DESCRIPTION] "Deep sleep (BMS in sleep, BLE not discoverable)",1
+[VALUE_DESCRIPTION] "Sleep (BMS in sleep, BLE discoverable)",0
+[END_TABLE]
+[START_TABLE] bool_state
+[VALUE_DESCRIPTION] "ON",1
+[VALUE_DESCRIPTION] "OFF",0
+[END_TABLE]
+[START_TABLE] bms_config_variable_type
+[VALUE_DESCRIPTION] "NO_TYPE",5
+[VALUE_DESCRIPTION] "FLOAT",4
+[VALUE_DESCRIPTION] "UINT32/INT32",3
+[VALUE_DESCRIPTION] "UINT16/INT16",2
+[VALUE_DESCRIPTION] "STRING",1
+[VALUE_DESCRIPTION] "BOOL",0
+[END_TABLE]
+[START_TABLE] warning_error_state_table
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_WARNING",6
+[VALUE_DESCRIPTION] "WAR_ERR_IN_WARNING",5
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_WARNING",4
+[VALUE_DESCRIPTION] "WAR_ERR_LEAVING_ERROR",3
+[VALUE_DESCRIPTION] "WAR_ERR_IN_ERROR",2
+[VALUE_DESCRIPTION] "WAR_ERR_ENTERING_ERROR",1
+[VALUE_DESCRIPTION] "WAR_ERR_NONE",0
+[END_TABLE]
+[END_VALUE_TABLE]
+
+[NODE] 
+
+[START_DESC]
+[START_DESC_NET]
+[END_DESC_NET]
+
+[START_DESC_NODE]
+[END_DESC_NODE]
+
+[START_DESC_MSG]
+1073741824 X "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+418370823 X "Added For E-REX (cells_temperature)";
+418370567 X "Added For E-REX (cells_voltage 12_15)";
+418370311 X "Added For E-REX (cells_voltage 8_11)";
+418370055 X "Added For E-REX (cells_voltage 4_7)";
+418369799 X "Added For E-REX (cells_voltage 0_3)";
+419384272 X "THERMAL RUNAWAY DETAILS.";
+419398276 X "Added For KG";
+419364955 X "This contain Profile for the message that has to be recived by charger CAN ID 0x18FF005B (HEARTBEAT)";
+285021466 X "This contain Profile for the message that has to be sent by charger in CAN ID 0x10FD151A";
+419377360 X "index = 0cell_V[0]= index+0cell_V[1]= index+1cell_V[2]= index+2index = 3cell_V[3]= index+0cell_V[4]= index+1cell_V[5]= index+2index = 6cell_V[6]= index+0cell_V[7]= index+1cell_V[8]= index+2";
+419377616 X "index = 1cell_temp1]= index+0cell_temp[2]= index+1cell_temp[3]= index+2index = 4cell_temp[4]= index+0cell_temp[5]= 0cell_temp[6]= 0";
+419378128 X "Data type : 0=bool, 2=int, 3= long, 4=floatFor Lv Pack Available capacity field to be used.";
+[END_DESC_MSG]
+
+[START_DESC_SIG]
+1073741824 X Reserved_2bit "02-01-2021 : Reviewed : Aman";
+1073741824 X Unused_16bit "29-12-2020 : Reviewed : Datta29-12-2020 : Reviewed : Datta29-12-2020 : Reviewed : Datta";
+1073741824 X Sensor_index "30-12-2020 : Reviewed : Datta";
+1073741824 X Vmon_Measured_Value "30-12-2020 : Reviewed : Datta";
+1073741824 X Vmon_High_value "30-12-2020 : Reviewed : Datta";
+1073741824 X Vmon_Low_value "30-12-2020 : Reviewed : Datta";
+1073741824 X smu_temperature_4 "30-12-2020 : Reviewed : Datta";
+1073741824 X smu_temperature_3 "30-12-2020 : Reviewed : Datta";
+1073741824 X smu_temperature_2 "30-12-2020 : Reviewed : Datta";
+1073741824 X smu_temperature_1 "30-12-2020 : Reviewed : Datta";
+1073741824 X Calendar_cycle_Aging "29-12-2020 : Reviewed : Datta";
+1073741824 X Aging1s "29-12-2020 : Reviewed : Datta";
+1073741824 X Sequence_number_of_the_board "Battery Monitoring unit Seq no.";
+1073741824 X Board_total_voltage "30-12-2020 : Reviewed : Datta";
+1073741824 X Battery_Peak_Dschg_Reco_Curr "The Peak Discharge Current that the BMS can take and is Recommended";
+1073741824 X Battery_Peak_Chg_Reco_Curr "The Peak Charge Current that the BMS can take and is Recommended";
+1073741824 X Load_current_recommendation "30-12-2020 : Reviewed : Datta";
+1073741824 X Temperature_internal_Mean "29-12-2020 : Reviewed : Datta";
+1073741824 X Temperature_Internal_Max "29-12-2020 : Reviewed : Datta";
+1073741824 X Temperature_Internal_Min "29-12-2020 : Reviewed : Datta";
+1073741824 X Voltage_Dynamic "Dynamic voltage is the difference between cell terminal voltage and cell open circuit voltage ";
+1073741824 X Charge_derated_current "30-12-2020 : Reviewed : Datta";
+1073741824 X Discharge_derated_current "30-12-2020 : Reviewed : Datta";
+1073741824 X CAN_Ignition "30-12-2020 : Reviewed : Datta";
+1073741824 X Sleep_Activation "30-12-2020 : Reviewed : Datta";
+1073741824 X Time_to_go_to_sleep "30-12-2020 : Reviewed : Datta";
+1073741824 X Message_Token_1 "30-12-2020 : Reviewed : Datta";
+1073741824 X Message_Token_2 "30-12-2020 : Reviewed : Datta";
+1073741824 X Message_Token_3 "30-12-2020 : Reviewed : Datta";
+1073741824 X CRC_CHARGERCONFIG "This byte is for error checking,to keep it simple this byte will hold addition of first 7bytes in the frame.CRC ";
+1073741824 X BAUDRATE "THIS IS FOR BAUDRATE CONFIGURATION0 - 250 kbps (default)1 - 500 kbps";
+1073741824 X State_of_Charge "29-12-2020 : Reviewed : Datta";
+419376594 X Current "Battery Current information will come max 327Amp for LV pack only";
+418370823 X Temperature_4 "For E-REX (cells_temperature 4)";
+418370823 X Temperature_3 "For E-REX (cells_temperature 3)";
+418370823 X Temperature_2 "For E-REX (cells_temperature 2)";
+418370823 X Temperature_1 "For E-REX (cells_temperature 1)";
+418370567 X Cell_voltage_15 "For E-REX (cells_voltage_15)";
+418370567 X Cell_voltage_14 "For E-REX (cells_voltage_13)";
+418370567 X Cell_voltage_13 "For E-REX (cells_voltage_14)";
+418370567 X Cell_voltage_12 "For E-REX (cells_voltage_12)";
+418370311 X Cell_voltage_11 "For E-REX (cells_voltage_11)";
+418370311 X Cell_voltage_10 "For E-REX (cells_voltage_10)";
+418370311 X Cell_voltage_9 "For E-REX (cells_voltage_9)";
+418370311 X Cell_voltage_8 "For E-REX (cells_voltage_8)";
+418370055 X Cell_voltage_7 "For E-REX (cells_voltage_7)";
+418370055 X Cell_voltage_6 "For E-REX (cells_voltage_6)";
+418370055 X Cell_voltage_5 "For E-REX (cells_voltage_5)";
+418370055 X Cell_voltage_4 "For E-REX (cells_voltage_4)";
+418369799 X Cell_voltage_3 "For E-REX (cells_voltage_3)";
+418369799 X Cell_voltage_2 "For E-REX (cells_voltage_2)";
+418369799 X Cell_voltage_1 "For E-REX (cells_voltage_1)";
+418369799 X Cell_voltage_0 "For E-REX (cells_voltage_0)";
+418369544 X Reserved_6bit "02-01-2021 : Reviewed : Aman";
+419384272 X Thermal_Runaway_Error "0 - No error1- Entering Error/ warning2.- Error3 - Leaving error";
+419398276 X Current_Battery "added for KG";
+419398276 X SoC_Less_Than_5Per_Error "Added For KG0 No Error1 Error";
+419398276 X SoC_Less_Than_10Per_Error "KG is Added0 no Error1 Error";
+419398276 X Battery_Pack_Not_Connected_Error "Added For KG 0 no Error1 Error";
+419398276 X Overtemperature_Error "Added For KG0 No Error1 Error";
+419398276 X Undervoltage_Error "Added For KG0 No Error1 Error";
+419398276 X Overvoltage_Error "Added For KG0 No Error1 Error";
+419398276 X Available_Energy "Added For KG phase 1_Nex Req";
+419380688 X State_of_overload_value "05-01-2021 : Reviewed : Datta";
+419380688 X State_of_overload_running_thresh "05-01-2021 : Reviewed : Datta";
+419364955 X Reserved_24bit "02-01-2021 : Reviewed : Aman";
+419364955 X Charger_1_Output_Current_SetPt "02-01-2021 : Reviewed : Aman";
+419364955 X Charger_1_Output_Voltage_SetPt "02-01-2021 : Reviewed : Aman";
+419364955 X Reserved_6bit "02-01-2021 : Reviewed : Aman";
+419364955 X Charger_1_Chargr_Status_from_BMS "02-01-2021 : Reviewed : Aman";
+285021466 X Reserved_24bit "02-01-2021 : Reviewed : Aman";
+285021466 X Bat_Chgr_1_Output_Current "02-01-2021 : Reviewed : Aman";
+285021466 X Bat_Chgr_1_Output_Voltage "02-01-2021 : Reviewed : Aman";
+285021466 X Reserved_2bit "02-01-2021 : Reviewed : Aman";
+285021466 X Bat_Chgr_1_Pwrline_State "02-01-2021 : Reviewed : Aman";
+285021466 X Bat_Chgr_1_State "02-01-2021 : Reviewed : Aman";
+419365328 X Battery_Voltage "29-12-2020 : Reviewed : Datta";
+419365328 X Min_Voltage "29-12-2020 : Reviewed : Datta";
+419365328 X Max_Voltage "29-12-2020 : Reviewed : Datta";
+419365584 X Current "Battery Current information will come max 327Amp for LV pack only";
+419365584 X Battery_Current "29-12-2020 : Reviewed : Datta";
+419365840 X Temperature_Cell_Min "29-12-2020 : Reviewed : Datta";
+419365840 X Temperature_Cell_Max "29-12-2020 : Reviewed : Datta";
+419365840 X Temperature_Cell_Mean "29-12-2020 : Reviewed : Datta";
+419366352 X Equivalent_Cycle "29-12-2020 : Reviewed : Datta";
+419366352 X State_of_Health "29-12-2020 : Reviewed : Datta";
+419368400 X Build_number "29-12-2020 : Reviewed : Datta";
+419377360 X Cell_voltage_at_Index_plus_2 "29-12-2020 : Reviewed : Datta";
+419377360 X Cell_voltage_at_Index_plus_1 "29-12-2020 : Reviewed : Datta";
+419377360 X Cell_voltage_at_Index_plus_0 "29-12-2020 : Reviewed : Datta";
+419377360 X Index_of_cell "29-12-2020 : Reviewed : Datta";
+419377616 X Temperature_at_NTC_index_plus_2 "29-12-2020 : Reviewed : Datta";
+419377616 X Temperature_at_NTC_index_plus_1 "29-12-2020 : Reviewed : Datta";
+419377616 X Temperature_at_NTC_index_plus_0 "29-12-2020 : Reviewed : Datta";
+419377616 X NTC_Index "29-12-2020 : Reviewed : Datta";
+419378128 X AvailableCapacity "Available battery Capacity in AH";
+419378128 X Initial_batt_capacity "For HV ";
+419378128 X Initial_batt_capacity_data_type "Initial battery Capacity data Type, Float or Int or long2 - int , 4 - float.";
+419376592 X Char_at_seq_number_x_7_plus_6 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_5 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_4 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_3 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_2 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_1 "30-12-2020 : Reviewed : Datta";
+419376592 X Char_at_seq_number_x_7_plus_0 "30-12-2020 : Reviewed : Datta";
+419376592 X Sequence_number "30-12-2020 : Reviewed : Datta";
+419369168 X Slot4_Error_Reserved "14-04-2020 : Reviewed : Datta";
+419369168 X Slot3_Error_Reserved "14-04-2020 : Reviewed : Datta";
+419369168 X Slot2_Error_Reserved "14-04-2020 : Reviewed : Datta";
+419369168 X Slot1_Error_Reserved "14-04-2020 : Reviewed : Datta";
+419369168 X Slot4_Error_State "14-04-2020 : Reviewed : Datta";
+419369168 X Slot3_Error_State "14-04-2020 : Reviewed : Datta";
+419369168 X Slot2_Error_State "14-04-2020 : Reviewed : Datta";
+419369168 X Slot4_Error_Id "14-04-2020 : Reviewed : Datta";
+419369168 X Slot3_Error_Id "14-04-2020 : Reviewed : Datta";
+419369168 X Slot2_Error_Id "14-04-2020 : Reviewed : Datta";
+419369168 X Slot1_Error_State "14-04-2020 : Reviewed : Datta";
+419369168 X Slot1_Error_Id "14-04-2020 : Reviewed : Datta";
+419382992 X PDU_Temperature_Data "30-12-2020 : Reviewed : Datta";
+419383248 X Energy_available_post_pdu_nw "30-12-2020 : Reviewed : Datta";
+419383248 X Energy_available_own_battery "30-12-2020 : Reviewed : Datta";
+[END_DESC_SIG]
+[END_DESC]
+
+[START_PARAM]
+[START_PARAM_NET]
+[END_PARAM_NET]
+
+[START_PARAM_NODE]
+[END_PARAM_NODE]
+
+[START_PARAM_MSG]
+[END_PARAM_MSG]
+
+[START_PARAM_SIG]
+"SystemSignalLongSymbol",STRING,""
+[END_PARAM_SIG]
+
+[START_PARAM_NODE_RX_SIG]
+[END_PARAM_NODE_RX_SIG]
+
+[START_PARAM_NODE_TX_MSG]
+[END_PARAM_NODE_TX_MSG]
+[END_PARAM]
+
+[START_PARAM_VAL]
+[START_PARAM_NET_VAL]
+[END_PARAM_NET_VAL]
+
+[START_PARAM_NODE_VAL]
+[END_PARAM_NODE_VAL]
+
+[START_PARAM_MSG_VAL]
+[END_PARAM_MSG_VAL]
+
+[START_PARAM_SIG_VAL]
+419380688,X,State_of_overload_running_thresh,"SystemSignalLongSymbol","State_of_overload_running_threshold"
+[END_PARAM_SIG_VAL]
+
+[END_PARAM_VAL]
+
+
+[START_NOT_SUPPORTED]
+[END_NOT_SUPPORTED]
+
+[START_NOT_PROCESSED]
+	PZ_
+	ON_QRS_
+	ON_
+	INY_
+	PNG_QRS_
+	PNG_
+	SVYGRE
+	ON_QRS_QRS_
+	RI_QNGN_
+	RAIINE_QNGN_
+	FTGLCR_
+	FTGLCR_INY_
+	ON_QRS_FTGLCR_
+	ON_FTGLCR_
+	FVT_GLCR_ERS_
+	INY_GNOYR_
+	FVT_TEBHC_
+	FVT_INYGLCR_
+	FVTGLCR_INYGLCR_
+	OB_GK_OH_
+	ON_QRS_ERY_
+	ON_ERY_
+	ON_QRS_QRS_ERY_
+	OH_FT_ERY_
+	OH_RI_ERY_
+	OH_OB_ERY_
+	FT_ZHY_INY_
+OF_:
+
+[END_NOT_PROCESSED]

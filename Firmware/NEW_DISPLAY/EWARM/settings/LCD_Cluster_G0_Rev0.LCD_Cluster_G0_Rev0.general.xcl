@@ -1,0 +1,15 @@
+C:\iar\ewarm-9.70.2\arm\bin\armproc.dll
+
+ C:\iar\ewarm-9.70.2\arm\bin\armstlink.dll
+
+ "Y:\Working\Current code\RCJ\Firmware\NEW_DISPLAY\EWARM\LCD_Cluster_G0_Rev0\Exe\LCD_Cluster_G0_Rev0.out"
+
+ --plugin=C:\iar\ewarm-9.70.2\arm\bin\armLibSupportUniversal.dll
+
+ --device_macro=C:\iar\ewarm-9.70.2\arm/config/debugger/ST/STM32G0xx.dmac
+
+ --flash_loader=C:\iar\ewarm-9.70.2\arm/config/flashloader/ST/FlashSTM32G0BxxB.board
+
+ 
+
+

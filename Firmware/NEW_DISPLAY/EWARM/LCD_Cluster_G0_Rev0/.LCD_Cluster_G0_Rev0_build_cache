@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildDb>
+    <Tool>
+        <Name>linker</Name>
+        <Parent>
+            <Path>D:\CODE\COMPANIES\CLUSTER\SOKUDO\NEW_DISPLAY\EWARM\LCD_Cluster_G0_Rev0\Exe\LCD_Cluster_G0_Rev0.out</Path>
+            <Output>
+                <Path>D:\CODE\COMPANIES\CLUSTER\SOKUDO\NEW_DISPLAY\EWARM\LCD_Cluster_G0_Rev0\List\LCD_Cluster_G0_Rev0.map</Path>
+            </Output>
+        </Parent>
+    </Tool>
+</BuildDb>

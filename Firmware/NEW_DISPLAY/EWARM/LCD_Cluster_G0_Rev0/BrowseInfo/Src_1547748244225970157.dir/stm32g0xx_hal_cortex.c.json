@@ -2,7 +2,7 @@
 	"arguments" : 
 	[
 		"C:\\iar\\ewarm-9.70.2\\arm\\bin\\iccarm.exe",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
 		"-nostdinc",
 		"-undef",
 		"-Wno-unaligned-access",
@@ -16,15 +16,15 @@
 		"-isystem",
 		"C:\\iar\\ewarm-9.70.2\\arm\\inc\\c",
 		"-I",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Core\\Inc\\",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Core\\Inc\\",
 		"-I",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\",
 		"-I",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\Legacy\\",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\Legacy\\",
 		"-I",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\CMSIS\\Device\\ST\\STM32G0xx\\Include\\",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\CMSIS\\Device\\ST\\STM32G0xx\\Include\\",
 		"-I",
-		"Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\CMSIS\\Include\\",
+		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\CMSIS\\Include\\",
 		"--target=armv7m-none-eabi",
 		"-D",
 		"__CHAR_BITS__=8",
@@ -863,7 +863,7 @@
 		"-x",
 		"c"
 	],
-	"directory" : "Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src",
-	"file" : "Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
-	"output" : "Y:\\Working\\Current code\\RCJ\\Firmware\\NEW_DISPLAY\\EWARM\\LCD_Cluster_G0_Rev0\\Obj\\STM32G0xx_HAL_Driver_14800413719917403617.dir\\stm32g0xx_hal_cortex.o"
+	"directory" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src",
+	"file" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\Drivers\\STM32G0xx_HAL_Driver\\Src\\stm32g0xx_hal_cortex.c",
+	"output" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\NEW_DISPLAY\\EWARM\\LCD_Cluster_G0_Rev0\\Obj\\STM32G0xx_HAL_Driver_14800413719917403617.dir\\stm32g0xx_hal_cortex.o"
 }

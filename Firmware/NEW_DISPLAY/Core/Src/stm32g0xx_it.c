@@ -125,11 +125,11 @@ void PendSV_Handler(void)
 void SysTick_Handler(void)
 {
   Flag_mSec = SET;
-  Flag_Display_Update = SET;
+  //Flag_Display_Update = SET;
   //if(!Flag_BatteryLow)                                                           
   
     Ticks++;
- //   if((Ticks % 5) == 0){Flag_Display_Update = SET;}
+    if((Ticks % 2) == 0){Flag_Display_Update = SET;}
     if((Ticks % 100) == 0)Flag_Send_Frame = SET;
     if((Ticks % 499) == 0)Flag_TGL ^= 1;
     if(Ticks > 999)

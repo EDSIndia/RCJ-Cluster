@@ -1,0 +1,52 @@
+!SESSION 2026-11-02 09:58:50.763 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.21
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data Y:\Working\Current code\RCJ\Firmware\EWARM
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2026-11-02 09:59:09.810
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack/
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-11-02 10:00:09.213
+!MESSAGE An internal error occurred during: "Executing the early startup extensions".
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.LinkedList.linkLast(LinkedList.java:146)
+	at java.base/java.util.LinkedList.add(LinkedList.java:342)
+	at com.arm.cmsis.pack.item.CmsisTreeItem.addChild(CmsisTreeItem.java:148)
+	at com.arm.cmsis.pack.item.CmsisTreeItem.addChild(CmsisTreeItem.java:1)
+	at com.arm.cmsis.pack.parser.CpXmlParser.parseElement(CpXmlParser.java:323)
+	at com.arm.cmsis.pack.parser.CpXmlParser.parseElement(CpXmlParser.java:330)
+	at com.arm.cmsis.pack.parser.CpXmlParser.parseFile(CpXmlParser.java:295)
+	at com.arm.cmsis.pack.CpPackManager.readPack(CpPackManager.java:504)
+	at com.arm.cmsis.pack.CpPackManager.loadPack(CpPackManager.java:545)
+	at com.arm.cmsis.pack.CpPackManager.loadPacks(CpPackManager.java:492)
+	at com.arm.cmsis.pack.CpPackManager.loadPacks(CpPackManager.java:459)
+	at com.arm.cmsis.pack.CpPackManager.getPacks(CpPackManager.java:305)
+	at com.arm.cmsis.pack.CpPackManager.reload(CpPackManager.java:256)
+	at com.iar.cmsismanager.product.CMSISManagerInitializer.earlyStartup(CMSISManagerInitializer.java:156)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-11-05 17:34:21.746 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.21
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data Y:\Working\Current code\RCJ\CAN_WORKING\Firmware\EWARM
+
+!ENTRY com.iar.cdt.arm.toolchain.cmsis.adapter 1 0 2026-11-05 17:34:51.189
+!MESSAGE Using CMSIS pack repositories: http://links.iar.com/cmsis/pack/
+
+!ENTRY org.eclipse.ui 4 0 2026-11-05 17:38:16.512
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+
+!ENTRY org.eclipse.ui 4 0 2026-11-05 17:38:16.522
+!MESSAGE Error occurred during status handling
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space

@@ -35,7 +35,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-void MH595_TEST(void);
 
 /* USER CODE END PD */
 
@@ -90,18 +89,21 @@ int main(void)
   
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_FDCAN1_Init();
-  FDCAN_Config();
+//  MX_ADC1_Init();
+//  MX_FDCAN1_Init();
+//  FDCAN_Config();
 //  MX_TIM2_Init();
   //MX_IWDG_Init();
-  App_Init();                                 //LCD Display Reg R4_speed bar,TEMP *C
+//  App_Init();         
+  
+  //LCD Display Reg R4_speed bar,TEMP *C
   //    for testing purpose only
     LCD_Reg[0] = ALL_SEGS_ON;                                                    
     LCD_Reg[1] = ALL_SEGS_ON;
     LCD_Reg[2] = ALL_SEGS_ON;
     LCD_Reg[3] = ALL_SEGS_ON; 
-  /* Infinite loop */                                                                            
+  /* Infinite loop */  
+  BKL_ON; 
   while (1)
   {    
 
@@ -131,13 +133,13 @@ int main(void)
 //      /*Speed Calculation*/
 //      Cal_speed();    
 //      /* Every Second activity */
-      if(Flag_Second){GP_Timer();}
+     // if(Flag_Second){GP_Timer();}
 //      
 //      /* managing CAN,indication,Mode,1-wire */
 //      Management_Process();
 //      
 //      /* Display Driver*/
-      if(Flag_Display_Update){Flag_Display_Update = RESET;  LCD_Drive();}
+      if(Flag_Display_Update){ Display(); Flag_Display_Update = RESET; }
    // }
   }
 }

@@ -14,6 +14,7 @@ void DISP_GEAR(uint8_t Gear);
 void DISP_PARKING(void);
 void DISP_SPEEDBAR (float Vehicle_SPEED);
 void DISP_REVERSE(void);
+void Display(void);
 /*------------------------------- MACROS--------------------------------------*/
 #define BIT(n)             (1UL << (n))                  /* Create bit mask */
 #define SET_BITS(X, Y)     ((X) |= (1<<Y))

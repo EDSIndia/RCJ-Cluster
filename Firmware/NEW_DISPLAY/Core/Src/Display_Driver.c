@@ -441,108 +441,110 @@ void Disp_BattCap(int Vehicle_capacity)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-uint16_t Segment = 0xFFFF;
+uint16_t Segment = 0;
 void LCD_Drive(void)
 {
-  COM1_OFF; COM2_OFF; COM3_OFF; COM4_OFF;
-  
+  COM4_OFF; COM3_OFF; COM2_OFF; COM1_OFF;
+ 
   LCD_Duty++;
   if(LCD_Duty > 8 )LCD_Duty = 0;
   
   switch(LCD_Duty)
   {
   case 0 :
-
-//    if (LCD_Reg[0] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
-//    if (LCD_Reg[0] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
-//    if (LCD_Reg[0] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
-//    if (LCD_Reg[0] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
-//    if (LCD_Reg[0] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
-//    if (LCD_Reg[0] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
-//    if (LCD_Reg[0] & BIT(20)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
-//    if (LCD_Reg[0] & BIT(19)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
-//    if (LCD_Reg[0] & BIT(18)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
-//    if (LCD_Reg[0] & BIT(17)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
-//    if (LCD_Reg[0] & BIT(16)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
-//    if (LCD_Reg[0] & BIT(15)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
-//    if (LCD_Reg[0] & BIT(14)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
-//    if (LCD_Reg[0] & BIT(13)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
-//    if (LCD_Reg[0] & BIT(12)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
-//    if (LCD_Reg[0] & BIT(11)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
-//    if (LCD_Reg[0] & BIT(10)) SEG17_SET; else  SEG17_RST;
-//    if (LCD_Reg[0] & BIT(9))  SEG18_SET; else  SEG18_RST;
-//    if (LCD_Reg[0] & BIT(8))  SEG19_SET; else SEG19_RST;
-//    if (LCD_Reg[0] & BIT(7))  SEG20_SET; else SEG20_RST;
-//    if (LCD_Reg[0] & BIT(6))  SEG21_SET; else SEG21_RST;
-//    if (LCD_Reg[0] & BIT(5))  SEG22_SET; else SEG22_RST;  
-//    if (LCD_Reg[0] & BIT(4))  SEG23_SET; else SEG23_RST;
-//    if (LCD_Reg[0] & BIT(3))  SEG24_SET; else SEG24_RST;
-//    if (LCD_Reg[0] & BIT(2))  SEG25_SET; else SEG25_RST;
-//    if (LCD_Reg[0] & BIT(1))  SEG26_SET; else SEG26_RST;
-//    if (LCD_Reg[0] & BIT(0))  SEG27_SET; else SEG27_RST;
-//    
-//    COM1_SET;
+   
+    if (LCD_Reg[0] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
+    if (LCD_Reg[0] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
+    if (LCD_Reg[0] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
+    if (LCD_Reg[0] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
+    if (LCD_Reg[0] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
+    if (LCD_Reg[0] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
+    if (LCD_Reg[0] & BIT(24)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
+    if (LCD_Reg[0] & BIT(23)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
+    if (LCD_Reg[0] & BIT(22)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
+    if (LCD_Reg[0] & BIT(21)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
+    if (LCD_Reg[0] & BIT(20)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
+    if (LCD_Reg[0] & BIT(19)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
+    if (LCD_Reg[0] & BIT(18)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
+    if (LCD_Reg[0] & BIT(17)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
+    if (LCD_Reg[0] & BIT(16)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
+    if (LCD_Reg[0] & BIT(15)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
+    if (LCD_Reg[0] & BIT(14)) SEG17_SET; else  SEG17_RST;
+    if (LCD_Reg[0] & BIT(13)) SEG18_SET; else  SEG18_RST;
+    if (LCD_Reg[0] & BIT(12)) SEG19_SET; else SEG19_RST;
+    if (LCD_Reg[0] & BIT(11)) SEG20_SET; else SEG20_RST;
+    if (LCD_Reg[0] & BIT(10)) SEG21_SET; else SEG21_RST;
+    if (LCD_Reg[0] & BIT(5))  SEG22_SET; else SEG22_RST;  
+    if (LCD_Reg[0] & BIT(4))  SEG23_SET; else SEG23_RST;
+    if (LCD_Reg[0] & BIT(3))  SEG24_SET; else SEG24_RST;
+    if (LCD_Reg[0] & BIT(2))  SEG25_SET; else SEG25_RST;
+    if (LCD_Reg[0] & BIT(1))  SEG26_SET; else SEG26_RST;
+    if (LCD_Reg[0] & BIT(0))  SEG27_SET; else SEG27_RST;
+    
+    COM1_SET;
     break;
   case 1 : 
-//    if (LCD_Reg[1] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
-//    if (LCD_Reg[1] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
-//    if (LCD_Reg[1] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
-//    if (LCD_Reg[1] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
-//    if (LCD_Reg[1] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
-//    if (LCD_Reg[1] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
-//    if (LCD_Reg[1] & BIT(20)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
-//    if (LCD_Reg[1] & BIT(19)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
-//    if (LCD_Reg[1] & BIT(18)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
-//    if (LCD_Reg[1] & BIT(17)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
-//    if (LCD_Reg[1] & BIT(16)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
-//    if (LCD_Reg[1] & BIT(15)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
-//    if (LCD_Reg[1] & BIT(14)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
-//    if (LCD_Reg[1] & BIT(13)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
-//    if (LCD_Reg[1] & BIT(12)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
-//    if (LCD_Reg[1] & BIT(11)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
-//    if (LCD_Reg[1] & BIT(10)) SEG17_SET; else SEG17_RST;
-//    if (LCD_Reg[1] & BIT(9))  SEG18_SET; else SEG18_RST;
-//    if (LCD_Reg[1] & BIT(8))  SEG19_SET; else SEG19_RST;
-//    if (LCD_Reg[1] & BIT(7))  SEG20_SET; else SEG20_RST;
-//    if (LCD_Reg[1] & BIT(6))  SEG21_SET; else SEG21_RST;
-//    if (LCD_Reg[1] & BIT(5))  SEG22_SET; else SEG22_RST;
-//    if (LCD_Reg[1] & BIT(4))  SEG23_SET; else SEG23_RST;
-//    if (LCD_Reg[1] & BIT(3))  SEG24_SET; else SEG24_RST;
-//    if (LCD_Reg[1] & BIT(2))  SEG25_SET; else SEG25_RST;
-//    if (LCD_Reg[1] & BIT(1))  SEG26_SET; else SEG26_RST;
-//    if (LCD_Reg[1] & BIT(0))  SEG27_SET; else SEG27_RST;
-//    COM2_SET; 
+    if (LCD_Reg[1] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
+    if (LCD_Reg[1] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
+    if (LCD_Reg[1] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
+    if (LCD_Reg[1] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
+    if (LCD_Reg[1] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
+    if (LCD_Reg[1] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
+    if (LCD_Reg[1] & BIT(24)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
+    if (LCD_Reg[1] & BIT(23)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
+    if (LCD_Reg[1] & BIT(22)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
+    if (LCD_Reg[1] & BIT(21)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
+    if (LCD_Reg[1] & BIT(20)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
+    if (LCD_Reg[1] & BIT(19)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
+    if (LCD_Reg[1] & BIT(18)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
+    if (LCD_Reg[1] & BIT(17)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
+    if (LCD_Reg[1] & BIT(16)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
+    if (LCD_Reg[1] & BIT(15)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
+    if (LCD_Reg[1] & BIT(14)) SEG17_SET; else  SEG17_RST;
+    if (LCD_Reg[1] & BIT(13))  SEG18_SET; else  SEG18_RST;
+    if (LCD_Reg[1] & BIT(12))  SEG19_SET; else SEG19_RST;
+    if (LCD_Reg[1] & BIT(11))  SEG20_SET; else SEG20_RST;
+    if (LCD_Reg[1] & BIT(10))  SEG21_SET; else SEG21_RST;
+    if (LCD_Reg[1] & BIT(5))  SEG22_SET; else SEG22_RST;  
+    if (LCD_Reg[1] & BIT(4))  SEG23_SET; else SEG23_RST;
+    if (LCD_Reg[1] & BIT(3))  SEG24_SET; else SEG24_RST;
+    if (LCD_Reg[1] & BIT(2))  SEG25_SET; else SEG25_RST;
+    if (LCD_Reg[1] & BIT(1))  SEG26_SET; else SEG26_RST;
+    if (LCD_Reg[1] & BIT(0))  SEG27_SET; else SEG27_RST;
+    
+      COM2_SET; 
     break;
     
   case 2 : 
-//    if (LCD_Reg[2] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
-//    if (LCD_Reg[2] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
-//    if (LCD_Reg[2] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
-//    if (LCD_Reg[2] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
-//    if (LCD_Reg[2] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
-//    if (LCD_Reg[2] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
-//    if (LCD_Reg[2] & BIT(20)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
-//    if (LCD_Reg[2] & BIT(19)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
-//    if (LCD_Reg[2] & BIT(18)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
-//    if (LCD_Reg[2] & BIT(17)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
-//    if (LCD_Reg[2] & BIT(16)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
-//    if (LCD_Reg[2] & BIT(15)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
-//    if (LCD_Reg[2] & BIT(14)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
-//    if (LCD_Reg[2] & BIT(13)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
-//    if (LCD_Reg[2] & BIT(12)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
-//    if (LCD_Reg[2] & BIT(11)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
-//    if (LCD_Reg[2] & BIT(10)) SEG17_SET; else  SEG17_RST;
-//    if (LCD_Reg[2] & BIT(9))  SEG18_SET; else  SEG18_RST;
-//    if (LCD_Reg[2] & BIT(8))  SEG19_SET; else SEG19_RST;
-//    if (LCD_Reg[2] & BIT(7))  SEG20_SET; else SEG20_RST;
-//    if (LCD_Reg[2] & BIT(6))  SEG21_SET; else SEG21_RST;
-//    if (LCD_Reg[2] & BIT(5))  SEG22_SET; else SEG22_RST;
-//    if (LCD_Reg[2] & BIT(4))  SEG23_SET; else SEG23_RST;
-//    if (LCD_Reg[2] & BIT(3))  SEG24_SET; else SEG24_RST;
-//    if (LCD_Reg[2] & BIT(2))  SEG25_SET; else SEG25_RST;
-//    if (LCD_Reg[2] & BIT(1))  SEG26_SET; else SEG26_RST;
-//    if (LCD_Reg[2] & BIT(0))  SEG27_SET; else SEG27_RST;
-//    COM3_SET; 
+    if (LCD_Reg[2] & BIT(30)) {SET_BITS(Segment,7);}  else {CLEAR_BITS(Segment,7);}//1
+    if (LCD_Reg[2] & BIT(29)) {SET_BITS(Segment,6);}  else {CLEAR_BITS(Segment,6);}//2
+    if (LCD_Reg[2] & BIT(28)) {SET_BITS(Segment,5);}  else {CLEAR_BITS(Segment,5);}//3
+    if (LCD_Reg[2] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
+    if (LCD_Reg[2] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
+    if (LCD_Reg[2] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
+    if (LCD_Reg[2] & BIT(24)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
+    if (LCD_Reg[2] & BIT(23)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
+    if (LCD_Reg[2] & BIT(22)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
+    if (LCD_Reg[2] & BIT(21)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
+    if (LCD_Reg[2] & BIT(20)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
+    if (LCD_Reg[2] & BIT(19)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
+    if (LCD_Reg[2] & BIT(18)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
+    if (LCD_Reg[2] & BIT(17)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
+    if (LCD_Reg[2] & BIT(16)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
+    if (LCD_Reg[2] & BIT(15)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
+    if (LCD_Reg[2] & BIT(14)) SEG17_SET; else  SEG17_RST;
+    if (LCD_Reg[2] & BIT(13))  SEG18_SET; else  SEG18_RST;
+    if (LCD_Reg[2] & BIT(12))  SEG19_SET; else SEG19_RST;
+    if (LCD_Reg[2] & BIT(11))  SEG20_SET; else SEG20_RST;
+    if (LCD_Reg[2] & BIT(10))  SEG21_SET; else SEG21_RST;
+    if (LCD_Reg[2] & BIT(5))  SEG22_SET; else SEG22_RST;  
+    if (LCD_Reg[2] & BIT(4))  SEG23_SET; else SEG23_RST;
+    if (LCD_Reg[2] & BIT(3))  SEG24_SET; else SEG24_RST;
+    if (LCD_Reg[2] & BIT(2))  SEG25_SET; else SEG25_RST;
+    if (LCD_Reg[2] & BIT(1))  SEG26_SET; else SEG26_RST;
+    if (LCD_Reg[2] & BIT(0))  SEG27_SET; else SEG27_RST;
+ 
+    COM3_SET; 
     break;
     
   case 3 : 
@@ -552,22 +554,22 @@ void LCD_Drive(void)
     if (LCD_Reg[3] & BIT(27)) {SET_BITS(Segment,4);}  else {CLEAR_BITS(Segment,4);}//4
     if (LCD_Reg[3] & BIT(26)) {SET_BITS(Segment,3);}  else {CLEAR_BITS(Segment,3);}//5  
     if (LCD_Reg[3] & BIT(25)) {SET_BITS(Segment,2);}  else {CLEAR_BITS(Segment,2);}//6
-    if (LCD_Reg[3] & BIT(20)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
-    if (LCD_Reg[3] & BIT(19)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
-    if (LCD_Reg[3] & BIT(18)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
-    if (LCD_Reg[3] & BIT(17)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
-    if (LCD_Reg[3] & BIT(16)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
-    if (LCD_Reg[3] & BIT(15)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
-    if (LCD_Reg[3] & BIT(14)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
-    if (LCD_Reg[3] & BIT(13)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
-    if (LCD_Reg[3] & BIT(12)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
-    if (LCD_Reg[3] & BIT(11)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
-    if (LCD_Reg[3] & BIT(10)) SEG17_SET; else SEG17_RST;
-    if (LCD_Reg[3] & BIT(9))  SEG18_SET; else SEG18_RST;
-    if (LCD_Reg[3] & BIT(8))  SEG19_SET; else SEG19_RST;
-    if (LCD_Reg[3] & BIT(7))  SEG20_SET; else SEG20_RST;
-    if (LCD_Reg[3] & BIT(6))  SEG21_SET; else SEG21_RST;
-    if (LCD_Reg[3] & BIT(5))  SEG22_SET; else SEG22_RST;
+    if (LCD_Reg[3] & BIT(24)) {SET_BITS(Segment,1);}  else {CLEAR_BITS(Segment,1);}//7
+    if (LCD_Reg[3] & BIT(23)) {SET_BITS(Segment,0);}  else {CLEAR_BITS(Segment,0);}//8
+    if (LCD_Reg[3] & BIT(22)) {SET_BITS(Segment,12);} else {CLEAR_BITS(Segment,12);}//9
+    if (LCD_Reg[3] & BIT(21)) {SET_BITS(Segment,13);} else {CLEAR_BITS(Segment,13);}//10
+    if (LCD_Reg[3] & BIT(20)) {SET_BITS(Segment,14);} else {CLEAR_BITS(Segment,14);}//11
+    if (LCD_Reg[3] & BIT(19)) {SET_BITS(Segment,15);} else {CLEAR_BITS(Segment,15);}//12
+    if (LCD_Reg[3] & BIT(18)) {SET_BITS(Segment,11);} else {CLEAR_BITS(Segment,11);}//13
+    if (LCD_Reg[3] & BIT(17)) {SET_BITS(Segment,10);} else {CLEAR_BITS(Segment,10);}//14
+    if (LCD_Reg[3] & BIT(16)) {SET_BITS(Segment,9);}  else {CLEAR_BITS(Segment,9);}//15
+    if (LCD_Reg[3] & BIT(15)) {SET_BITS(Segment,8);}  else {CLEAR_BITS(Segment,8);}//16
+    if (LCD_Reg[3] & BIT(14)) SEG17_SET; else  SEG17_RST;
+    if (LCD_Reg[3] & BIT(13))  SEG18_SET; else  SEG18_RST;
+    if (LCD_Reg[3] & BIT(12))  SEG19_SET; else SEG19_RST;
+    if (LCD_Reg[3] & BIT(11))  SEG20_SET; else SEG20_RST;
+    if (LCD_Reg[3] & BIT(10))  SEG21_SET; else SEG21_RST;
+    if (LCD_Reg[3] & BIT(5))  SEG22_SET; else SEG22_RST;  
     if (LCD_Reg[3] & BIT(4))  SEG23_SET; else SEG23_RST;
     if (LCD_Reg[3] & BIT(3))  SEG24_SET; else SEG24_RST;
     if (LCD_Reg[3] & BIT(2))  SEG25_SET; else SEG25_RST;
@@ -577,96 +579,98 @@ void LCD_Drive(void)
     break;
     
   case 4 : 
-//    if (LCD_Reg[0] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
-//    if (LCD_Reg[0] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
-//    if (LCD_Reg[0] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
-//    if (LCD_Reg[0] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
-//    if (LCD_Reg[0] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
-//    if (LCD_Reg[0] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
-//    if (LCD_Reg[0] & BIT(20)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
-//    if (LCD_Reg[0] & BIT(19)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
-//    if (LCD_Reg[0] & BIT(18)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
-//    if (LCD_Reg[0] & BIT(17)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
-//    if (LCD_Reg[0] & BIT(16)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
-//    if (LCD_Reg[0] & BIT(15)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
-//    if (LCD_Reg[0] & BIT(14)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
-//    if (LCD_Reg[0] & BIT(13)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
-//    if (LCD_Reg[0] & BIT(12)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
-//    if (LCD_Reg[0] & BIT(11)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
-//    if (LCD_Reg[0] & BIT(10)) SEG17_RST; else SEG17_SET;
-//    if (LCD_Reg[0] & BIT(9))  SEG18_RST; else SEG18_SET;
-//    if (LCD_Reg[0] & BIT(8))  SEG19_RST; else SEG19_SET;
-//    if (LCD_Reg[0] & BIT(7))  SEG20_RST; else SEG20_SET;
-//    if (LCD_Reg[0] & BIT(6))  SEG21_RST; else SEG21_SET;
-//    if (LCD_Reg[0] & BIT(5))  SEG22_RST; else SEG22_SET;
-//    if (LCD_Reg[0] & BIT(4))  SEG23_RST; else SEG23_SET;
-//    if (LCD_Reg[0] & BIT(3))  SEG24_RST; else SEG24_SET;
-//    if (LCD_Reg[0] & BIT(2))  SEG25_RST; else SEG25_SET;
-//    if (LCD_Reg[0] & BIT(1))  SEG26_RST; else SEG26_SET;
-//    if (LCD_Reg[0] & BIT(0))  SEG27_RST; else SEG27_SET;
-//    COM1_RST;
+    if (LCD_Reg[0] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
+    if (LCD_Reg[0] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
+    if (LCD_Reg[0] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
+    if (LCD_Reg[0] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
+    if (LCD_Reg[0] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
+    if (LCD_Reg[0] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
+    if (LCD_Reg[0] & BIT(24)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
+    if (LCD_Reg[0] & BIT(23)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
+    if (LCD_Reg[0] & BIT(22)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
+    if (LCD_Reg[0] & BIT(21)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
+    if (LCD_Reg[0] & BIT(20)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
+    if (LCD_Reg[0] & BIT(19)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
+    if (LCD_Reg[0] & BIT(18)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
+    if (LCD_Reg[0] & BIT(17)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
+    if (LCD_Reg[0] & BIT(16)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
+    if (LCD_Reg[0] & BIT(15)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
+    if (LCD_Reg[0] & BIT(14)) SEG17_RST; else SEG17_SET;
+    if (LCD_Reg[0] & BIT(13))  SEG18_RST; else SEG18_SET;
+    if (LCD_Reg[0] & BIT(12))  SEG19_RST; else SEG19_SET;
+    if (LCD_Reg[0] & BIT(11))  SEG20_RST; else SEG20_SET;
+    if (LCD_Reg[0] & BIT(10))  SEG21_RST; else SEG21_SET;
+    if (LCD_Reg[0] & BIT(5))  SEG22_RST; else SEG22_SET;
+    if (LCD_Reg[0] & BIT(4))  SEG23_RST; else SEG23_SET;
+    if (LCD_Reg[0] & BIT(3))  SEG24_RST; else SEG24_SET;
+    if (LCD_Reg[0] & BIT(2))  SEG25_RST; else SEG25_SET;
+    if (LCD_Reg[0] & BIT(1))  SEG26_RST; else SEG26_SET;
+    if (LCD_Reg[0] & BIT(0))  SEG27_RST; else SEG27_SET;
+    
+    COM1_RST;
     break;
     
   case 5 : 
-//    if (LCD_Reg[1] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
-//    if (LCD_Reg[1] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
-//    if (LCD_Reg[1] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
-//    if (LCD_Reg[1] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
-//    if (LCD_Reg[1] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
-//    if (LCD_Reg[1] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
-//    if (LCD_Reg[1] & BIT(20)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
-//    if (LCD_Reg[1] & BIT(19)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
-//    if (LCD_Reg[1] & BIT(18)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
-//    if (LCD_Reg[1] & BIT(17)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
-//    if (LCD_Reg[1] & BIT(16)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
-//    if (LCD_Reg[1] & BIT(15)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
-//    if (LCD_Reg[1] & BIT(14)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
-//    if (LCD_Reg[1] & BIT(13)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
-//    if (LCD_Reg[1] & BIT(12)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
-//    if (LCD_Reg[1] & BIT(11)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
-//    if (LCD_Reg[1] & BIT(10)) SEG17_RST; else SEG17_SET;
-//    if (LCD_Reg[1] & BIT(9))  SEG18_RST; else SEG18_SET;
-//    if (LCD_Reg[1] & BIT(8))  SEG19_RST; else SEG19_SET;
-//    if (LCD_Reg[1] & BIT(7))  SEG20_RST; else SEG20_SET;
-//    if (LCD_Reg[1] & BIT(6))  SEG21_RST; else SEG21_SET;
-//    if (LCD_Reg[1] & BIT(5))  SEG22_RST; else SEG22_SET;
-//    if (LCD_Reg[1] & BIT(4))  SEG23_RST; else SEG23_SET;
-//    if (LCD_Reg[1] & BIT(3))  SEG24_RST; else SEG24_SET;
-//    if (LCD_Reg[1] & BIT(2))  SEG25_RST; else SEG25_SET;
-//    if (LCD_Reg[1] & BIT(1))  SEG26_RST; else SEG26_SET;
-//    if (LCD_Reg[1] & BIT(0))  SEG27_RST; else SEG27_SET;
-//    COM2_RST; 
+    if (LCD_Reg[1] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
+    if (LCD_Reg[1] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
+    if (LCD_Reg[1] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
+    if (LCD_Reg[1] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
+    if (LCD_Reg[1] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
+    if (LCD_Reg[1] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
+    if (LCD_Reg[1] & BIT(24)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
+    if (LCD_Reg[1] & BIT(23)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
+    if (LCD_Reg[1] & BIT(22)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
+    if (LCD_Reg[1] & BIT(21)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
+    if (LCD_Reg[1] & BIT(20)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
+    if (LCD_Reg[1] & BIT(19)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
+    if (LCD_Reg[1] & BIT(18)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
+    if (LCD_Reg[1] & BIT(17)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
+    if (LCD_Reg[1] & BIT(16)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
+    if (LCD_Reg[1] & BIT(15)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
+    if (LCD_Reg[1] & BIT(14)) SEG17_RST; else SEG17_SET;
+    if (LCD_Reg[1] & BIT(13))  SEG18_RST; else SEG18_SET;
+    if (LCD_Reg[1] & BIT(12))  SEG19_RST; else SEG19_SET;
+    if (LCD_Reg[1] & BIT(11))  SEG20_RST; else SEG20_SET;
+    if (LCD_Reg[1] & BIT(10))  SEG21_RST; else SEG21_SET;
+    if (LCD_Reg[1] & BIT(5))  SEG22_RST; else SEG22_SET;
+    if (LCD_Reg[1] & BIT(4))  SEG23_RST; else SEG23_SET;
+    if (LCD_Reg[1] & BIT(3))  SEG24_RST; else SEG24_SET;
+    if (LCD_Reg[1] & BIT(2))  SEG25_RST; else SEG25_SET;
+    if (LCD_Reg[1] & BIT(1))  SEG26_RST; else SEG26_SET;
+    if (LCD_Reg[1] & BIT(0))  SEG27_RST; else SEG27_SET;
+ 
+    COM2_RST; 
     break;
     
-//  case 6 : 
-//    if (LCD_Reg[2] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
-//    if (LCD_Reg[2] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
-//    if (LCD_Reg[2] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
-//    if (LCD_Reg[2] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
-//    if (LCD_Reg[2] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
-//    if (LCD_Reg[2] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
-//    if (LCD_Reg[2] & BIT(20)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
-//    if (LCD_Reg[2] & BIT(19)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
-//    if (LCD_Reg[2] & BIT(18)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
-//    if (LCD_Reg[2] & BIT(17)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
-//    if (LCD_Reg[2] & BIT(16)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
-//    if (LCD_Reg[2] & BIT(15)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
-//    if (LCD_Reg[2] & BIT(14)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
-//    if (LCD_Reg[2] & BIT(13)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
-//    if (LCD_Reg[2] & BIT(12)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
-//    if (LCD_Reg[2] & BIT(11)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
-//    if (LCD_Reg[2] & BIT(10)) SEG17_RST; else SEG17_SET;
-//    if (LCD_Reg[2] & BIT(9))  SEG18_RST; else SEG18_SET;
-//    if (LCD_Reg[2] & BIT(8))  SEG19_RST; else SEG19_SET;
-//    if (LCD_Reg[2] & BIT(7))  SEG20_RST; else SEG20_SET;
-//    if (LCD_Reg[2] & BIT(6))  SEG21_RST; else SEG21_SET;
-//    if (LCD_Reg[2] & BIT(5))  SEG22_RST; else SEG22_SET;
-//    if (LCD_Reg[2] & BIT(4))  SEG23_RST; else SEG23_SET;
-//    if (LCD_Reg[2] & BIT(3))  SEG24_RST; else SEG24_SET;
-//    if (LCD_Reg[2] & BIT(2))  SEG25_RST; else SEG25_SET;
-//    if (LCD_Reg[2] & BIT(1))  SEG26_RST; else SEG26_SET;
-//    if (LCD_Reg[2] & BIT(0))  SEG27_RST; else SEG27_SET;
-//    COM3_RST; 
+  case 6 : 
+    if (LCD_Reg[2] & BIT(30)) {CLEAR_BITS(Segment,7);}  else {SET_BITS(Segment,7);}//1
+    if (LCD_Reg[2] & BIT(29)) {CLEAR_BITS(Segment,6);}  else {SET_BITS(Segment,6);}//2
+    if (LCD_Reg[2] & BIT(28)) {CLEAR_BITS(Segment,5);}  else {SET_BITS(Segment,5);}//3
+    if (LCD_Reg[2] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
+    if (LCD_Reg[2] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
+    if (LCD_Reg[2] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
+    if (LCD_Reg[2] & BIT(24)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
+    if (LCD_Reg[2] & BIT(23)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
+    if (LCD_Reg[2] & BIT(22)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
+    if (LCD_Reg[2] & BIT(21)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
+    if (LCD_Reg[2] & BIT(20)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
+    if (LCD_Reg[2] & BIT(19)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
+    if (LCD_Reg[2] & BIT(18)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
+    if (LCD_Reg[2] & BIT(17)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
+    if (LCD_Reg[2] & BIT(16)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
+    if (LCD_Reg[2] & BIT(15)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
+    if (LCD_Reg[2] & BIT(14)) SEG17_RST; else SEG17_SET;
+    if (LCD_Reg[2] & BIT(13))  SEG18_RST; else SEG18_SET;
+    if (LCD_Reg[2] & BIT(12))  SEG19_RST; else SEG19_SET;
+    if (LCD_Reg[2] & BIT(11))  SEG20_RST; else SEG20_SET;
+    if (LCD_Reg[2] & BIT(10))  SEG21_RST; else SEG21_SET;
+    if (LCD_Reg[2] & BIT(5))  SEG22_RST; else SEG22_SET;
+    if (LCD_Reg[2] & BIT(4))  SEG23_RST; else SEG23_SET;
+    if (LCD_Reg[2] & BIT(3))  SEG24_RST; else SEG24_SET;
+    if (LCD_Reg[2] & BIT(2))  SEG25_RST; else SEG25_SET;
+    if (LCD_Reg[2] & BIT(1))  SEG26_RST; else SEG26_SET;
+    if (LCD_Reg[2] & BIT(0))  SEG27_RST; else SEG27_SET;
+    COM3_RST; 
     break;
     
   case 7 : 
@@ -676,21 +680,21 @@ void LCD_Drive(void)
     if (LCD_Reg[3] & BIT(27)) {CLEAR_BITS(Segment,4);}  else {SET_BITS(Segment,4);}//4
     if (LCD_Reg[3] & BIT(26)) {CLEAR_BITS(Segment,3);}  else {SET_BITS(Segment,3);}//5                                                                   
     if (LCD_Reg[3] & BIT(25)) {CLEAR_BITS(Segment,2);}  else {SET_BITS(Segment,2);}//6
-    if (LCD_Reg[3] & BIT(20)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
-    if (LCD_Reg[3] & BIT(19)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
-    if (LCD_Reg[3] & BIT(18)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
-    if (LCD_Reg[3] & BIT(17)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
-    if (LCD_Reg[3] & BIT(16)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
-    if (LCD_Reg[3] & BIT(15)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
-    if (LCD_Reg[3] & BIT(14)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
-    if (LCD_Reg[3] & BIT(13)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
-    if (LCD_Reg[3] & BIT(12)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
-    if (LCD_Reg[3] & BIT(11)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
-    if (LCD_Reg[3] & BIT(10)) SEG17_RST; else SEG17_SET;
-    if (LCD_Reg[3] & BIT(9))  SEG18_RST; else SEG18_SET;
-    if (LCD_Reg[3] & BIT(8))  SEG19_RST; else SEG19_SET;
-    if (LCD_Reg[3] & BIT(7))  SEG20_RST; else SEG20_SET;
-    if (LCD_Reg[3] & BIT(6))  SEG21_RST; else SEG21_SET;
+    if (LCD_Reg[3] & BIT(24)) {CLEAR_BITS(Segment,1);}  else {SET_BITS(Segment,1);}//7
+    if (LCD_Reg[3] & BIT(23)) {CLEAR_BITS(Segment,0);}  else {SET_BITS(Segment,0);}//8
+    if (LCD_Reg[3] & BIT(22)) {CLEAR_BITS(Segment,12);} else {SET_BITS(Segment,12);}//9
+    if (LCD_Reg[3] & BIT(21)) {CLEAR_BITS(Segment,13);} else {SET_BITS(Segment,13);}//10
+    if (LCD_Reg[3] & BIT(20)) {CLEAR_BITS(Segment,14);} else {SET_BITS(Segment,14);}//11
+    if (LCD_Reg[3] & BIT(19)) {CLEAR_BITS(Segment,15);} else {SET_BITS(Segment,15);}//12
+    if (LCD_Reg[3] & BIT(18)) {CLEAR_BITS(Segment,11);} else {SET_BITS(Segment,11);}//13
+    if (LCD_Reg[3] & BIT(17)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
+    if (LCD_Reg[3] & BIT(16)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
+    if (LCD_Reg[3] & BIT(15)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
+    if (LCD_Reg[3] & BIT(14)) SEG17_RST; else SEG17_SET;
+    if (LCD_Reg[3] & BIT(13))  SEG18_RST; else SEG18_SET;
+    if (LCD_Reg[3] & BIT(12))  SEG19_RST; else SEG19_SET;
+    if (LCD_Reg[3] & BIT(11))  SEG20_RST; else SEG20_SET;
+    if (LCD_Reg[3] & BIT(10))  SEG21_RST; else SEG21_SET;
     if (LCD_Reg[3] & BIT(5))  SEG22_RST; else SEG22_SET;
     if (LCD_Reg[3] & BIT(4))  SEG23_RST; else SEG23_SET;
     if (LCD_Reg[3] & BIT(3))  SEG24_RST; else SEG24_SET;
@@ -704,6 +708,63 @@ void LCD_Drive(void)
   } 
   Set_Data(Segment);
 }
+
+//uint16_t Segment = 0xFFFF;
+//
+//void LCD_Drive(void)
+//{
+//  uint32_t data;
+//  uint8_t  i;
+//
+//  /* SEG1..SEG16 -> Segment bit position (bit30 down to bit15 of LCD_Reg) */
+//  static const uint8_t SegMap[16] = {7,6,5,4,3,2,1,0,12,13,14,15,11,10,9,8};
+//
+//  LCD_Duty++;
+//  if(LCD_Duty > 7) LCD_Duty = 0;
+//
+//  /* Duty 0-3: normal phase, duty 4-7: inverted phase of the same COM */
+//  data = LCD_Reg[LCD_Duty & 3];
+//  if(LCD_Duty > 3) data = ~data;
+//
+//  /* SEG1..SEG16 (written through Set_Data) */
+//  for(i = 0; i < 16; i++)
+//  {
+//    if(data & BIT(30 - i)) Segment |=  (uint16_t)(1u << SegMap[i]);
+//    else                   Segment &= ~(uint16_t)(1u << SegMap[i]);
+//  }
+//
+//  /* SEG17..SEG27 (direct pin macros) */
+//  if(data & BIT(14)) SEG17_SET; else SEG17_RST;
+//  if(data & BIT(13)) SEG18_SET; else SEG18_RST;
+//  if(data & BIT(12)) SEG19_SET; else SEG19_RST;
+//  if(data & BIT(11)) SEG20_SET; else SEG20_RST;
+//  if(data & BIT(10)) SEG21_SET; else SEG21_RST;
+//  if(data & BIT(5))  SEG22_SET; else SEG22_RST;
+//  if(data & BIT(4))  SEG23_SET; else SEG23_RST;
+//  if(data & BIT(3))  SEG24_SET; else SEG24_RST;
+//  if(data & BIT(2))  SEG25_SET; else SEG25_RST;
+//  if(data & BIT(1))  SEG26_SET; else SEG26_RST;
+//  if(data & BIT(0))  SEG27_SET; else SEG27_RST;
+//
+//  /* Put all SEG1..SEG16 on the pins BEFORE the COM edge */
+//  Set_Data(Segment);
+//
+//  /* Now switch the COM lines: all segments are stable at this point */
+//  COM1_OFF; COM2_OFF; COM3_OFF; COM4_OFF;
+//
+//  switch(LCD_Duty)
+//  {
+//    case 0: COM1_SET; break;
+//    case 1: COM2_SET; break;
+//    case 2: COM3_SET; break;
+//    case 3: COM4_SET; break;
+//    case 4: COM1_RST; break;
+//    case 5: COM2_RST; break;
+//    case 6: COM3_RST; break;
+//    case 7: COM4_RST; break;
+//    default: break;
+//  }
+//}
 
 /*******************************************************************************
 * Function Name  : status_batt
@@ -772,10 +833,10 @@ void DISP_GEAR(uint8_t Gear)
 
 void Set_Data(uint16_t Data_Val)
 {
-  uint16_t  SegMult = 1;
+  uint16_t  SegMult = 0x01;
   uint8_t Seg_Counter =0 ;
-  LAT_595_RESET;
-  for(Seg_Counter = 0;Seg_Counter < 16; Seg_Counter++)                          // check 24 bits
+  
+  for(Seg_Counter = 0;Seg_Counter < 16; Seg_Counter++)                          // check 16 bits
   {
     if((SegMult & Data_Val)) DATA_595_SET;
     else    DATA_595_RESET;
@@ -1018,8 +1079,61 @@ void DISP_SPEEDBAR (float Vehicle_SPEED)
 
 
 
-
-
-
-
-
+uint16_t Data = 0;
+void Display(void)
+{
+  COM4_OFF; COM3_OFF; COM2_OFF; COM1_OFF;
+  
+  LCD_Duty++;
+  if(LCD_Duty > 7 )LCD_Duty = 0;
+  
+  switch(LCD_Duty)
+  {
+  case 0:
+    {
+      Data = Segment; 
+      COM1_SET;
+    }break;
+    
+  case 1:
+    {
+      Data = ~Segment; 
+      COM1_RST;
+    } break;
+    
+  case 2:
+    {
+      Data = Segment; 
+      COM2_SET;
+    }break;
+  case 3:
+    {
+      Data = ~Segment; 
+      COM2_RST;
+    }break;
+    
+  case 4:
+    {
+      Data = Segment;
+      COM3_SET;
+      
+    }break;
+  case 5:
+    {
+      Data = ~Segment;
+      COM3_RST;
+    }break;
+  case 6:
+    {
+      Data = Segment;
+      COM4_SET;
+      
+    }break;
+  case 7:
+    {
+      Data = ~Segment;
+      COM4_RST;
+    }break;
+  }
+  Set_Data(Data);
+}

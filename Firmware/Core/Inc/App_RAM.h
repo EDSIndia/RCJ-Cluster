@@ -11,25 +11,29 @@
 #define __Application_RAM_H
 
 
+#include "stm32g0xx.h"
 typedef struct									// DATA STRUCTURE FOR VEHICLE 
  {
-    uint16_t  SOC;                                                                  // State of Charge
+    uint16_t  SOC;                                                              // State of Charge
     char  MODE;                                                                 // Vehicle Mode D/R/N/C
-    char GearNo;
+    char GearNo;                                                                // Vehicle gear
     float SPEED;                                                                // Vehicle Speed    
-    float BV;                                                                   // Battery Voltage
-    uint16_t BC;                                                                   // Battery Capacity
-    float EBV;
+    float BV;                                                                   // Battery Voltage by CAN
+    uint16_t BC;                                                                // Battery Capacity by CAN
+    float EBV;                                                                  // Battery vtg by ADC
     float Dist_Meters;                                                          // Distance travlled in meters
     float ODO;                                                                  // Vehicle Odo
-    float Batt_TEMP;                                                              //Battery Temperature
-    float Trip;								// Vehicle trip meter
+    float Batt_TEMP;                                                            //Battery Temperature
+    float Trip;								        // Vehicle trip meter
     uint16_t MaxTemp;						                // Max temp among the cells
     FlagStatus Charging;
-    FlagStatus Ignition;                                                        // Ignition STATUS 
-    FlagStatus R_Winker;                                                        // Right Winker
-    FlagStatus L_Winker;                                                        // Left Winker
-  }Device_InitTypeDef;
+//    FlagStatus Ignition;                                                        // Ignition STATUS 
+//    FlagStatus R_Winker;                                                        // Right Winker
+//    FlagStatus L_Winker;                                                        // Left Winker
+    FlagStatus Flag_BrakeApplied;
+    FlagStatus Flag_MOTOR_ERROR;
+    FlagStatus Flag_THROTTLE_ERROR;
+}Device_InitTypeDef;
 
 
 
@@ -68,9 +72,9 @@ Flag_Display_Update,
 Flag_Send_Frame,
 Flag_Odo_Toggle;
 
-extern char 
-Batt_Volt,                                                                      //Battery Voltage
-DataBufer[1024];                                                                // data buffer 1024 byte
+//extern char 
+//Batt_Volt,                                                                      //Battery Voltage
+//DataBufer[1024];                                                                // data buffer 1024 byte
 
 extern unsigned char 
 

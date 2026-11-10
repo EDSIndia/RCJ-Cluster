@@ -125,17 +125,17 @@ extern "C" {
   /* ------------------------------- */
   /* USER CODE BEGIN Private defines */
   /* ------------------------------- */
-#define ODO_RST_PORT                     GPIOA
-#define ODO_RST_PIN                      LL_GPIO_PIN_1
+#define ODO_RST_PORT         GPIOA
+#define ODO_RST_PIN          LL_GPIO_PIN_14
   
-  //
-  //
-  //#define LED_LW_PORT           GPIOF
-  //#define LED_LW_PIN            LL_GPIO_PIN_1
-  //
-  //#define LED_RW_PORT           GPIOA                     /** Debug Pin **/
-  //#define LED_RW_PIN            LL_GPIO_PIN_13         
+#define LOGO_ON              LOGO_LED_Pin_Port->BSRR  = LOGO_LED_Pin
+#define LOGO_OFF             LOGO_LED_Pin_Port->BRR   = LOGO_LED_Pin  
   
+#define HL_ON                HL_GPIO_Port->BSRR  = HL_Pin
+#define HL_OFF               HL_GPIO_Port->BRR   = HL_Pin  
+  
+#define BUZZER_ON            BUZZER_ON_GPIO_Port->BSRR  = BUZZER_ON_Pin
+#define BUZZER_OFF           BUZZER_ON_GPIO_Port->BRR   = BUZZER_ON_Pin  
   
 #define LW_ON                LED_LW_PORT->BSRR  = LED_LW_PIN
 #define LW_OFF               LED_LW_PORT->BRR   = LED_LW_PIN
@@ -145,18 +145,28 @@ extern "C" {
 #define RW_OFF               LED_RW_PORT->BRR  = LED_RW_PIN
 #define RW_TGL               LED_RW_PORT->ODR  ^= LED_RW_PIN
   
-#define BRAKE_LED_ON         BRAKE_LED_GPIO_Port->BSRR = BRAKE_LED_Pin
-#define BRAKE_LED_OFF        BRAKE_LED_GPIO_Port->BRR  = BRAKE_LED_Pin
-#define BRAKE_LED_TGL        BRAKE_LED_GPIO_Port->ODR ^= BRAKE_LED_Pin
+#define BRAKE_LED_ON         RED_LED_Pin_Port->BSRR = RED_LED_Pin
+#define BRAKE_LED_OFF        RED_LED_Pin_Port->BRR  = RED_LED_Pin
+#define BRAKE_LED_TGL        RED_LED_Pin_Port->ODR ^= RED_LED_Pin
+  
+#define CHRG_ON              GRN_LED_Pin_Port->BSRR = GRN_LED_Pin
+#define CHRG_OFF             GRN_LED_Pin_Port->BRR  = GRN_LED_Pin
+  
+//#define BRAKE_LED_TGL        RED_LED_Pin_Port->ODR ^= RED_LED_Pin  
+  
+#define MOTOR_ON              ORAN_LED_Pin_Port->BSRR = ORAN_LED_Pin
+#define MOTOR_OFF             ORAN_LED_Pin_Port->BRR  = ORAN_LED_Pin
+  
+#define THROTTLE_ON           YLW_LED_Pin_Port->BSRR = YLW_LED_Pin
+#define THROTTLE_OFF          YLW_LED_Pin_Port->BRR  = YLW_LED_Pin
+  
+#define LOW_SOC_LED_ON        LOW_SOC_LED_GPIO_Port->BSRR = LOW_SOC_LED_Pin
+#define LOW_SOC_LED_OFF       LOW_SOC_LED_GPIO_Port->BRR  = LOW_SOC_LED_Pin
+#define LOW_SOC_LED_TGL       LOW_SOC_LED_GPIO_Port->ODR ^= LOW_SOC_LED_Pin
   
   
-#define LOW_SOC_LED_ON       LOW_SOC_LED_GPIO_Port->BSRR = LOW_SOC_LED_Pin
-#define LOW_SOC_LED_OFF      LOW_SOC_LED_GPIO_Port->BRR  = LOW_SOC_LED_Pin
-#define LOW_SOC_LED_TGL      LOW_SOC_LED_GPIO_Port->ODR ^= LOW_SOC_LED_Pin
-  
-  
-#define BKL_ON  LCD_BKL_PIN_GPIO_Port-> BSRR = LCD_BKL_PIN_Pin
-#define BKL_OFF LCD_BKL_PIN_GPIO_Port-> BRR = LCD_BKL_PIN_Pin
+#define BKL_ON                LCD_BKL_PIN_GPIO_Port-> BSRR = LCD_BKL_PIN_Pin
+#define BKL_OFF               LCD_BKL_PIN_GPIO_Port-> BRR = LCD_BKL_PIN_Pin
   
   
   /* ------------------------------ */

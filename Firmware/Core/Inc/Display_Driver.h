@@ -73,6 +73,7 @@ void status_batt_soc(uint8_t Batt_SOC);
 #define CLR_RDY      LCD_Reg[0] &=  ~BIT(3);
 #define TGL_RDY      LCD_Reg[0] ^=   BIT(3);
 
+
 #define CLR_DISP {\
     CLEAR_BITS(LCD_Reg[0],29);\
     CLEAR_BITS(LCD_Reg[1],29,2);\

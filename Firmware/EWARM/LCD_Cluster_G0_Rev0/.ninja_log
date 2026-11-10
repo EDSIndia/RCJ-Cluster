@@ -1,166 +1,213 @@
 # ninja log v6
-25	1150	8152353522143267	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-2717	3628	8150943969125853	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_adc.o	1cc8f62a5f37d6dd
-3089	3818	8152350039752980	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	ec42ba1c3ea796f0
-4182	4703	8150943983754648	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr_ex.o	ffe81b208dbcd55
-1562	2227	8152350024481751	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	dd0c5b2b4bec4504
-4126	4578	8150943983216659	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr.o	fe0ad537998704e6
-2732	3190	8150943969267031	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_cortex.o	e0408902676cd7ff
-1192	1420	8152353533812186	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-675	1715	8152350015616694	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	f5ab5e7659bffa2f
-4213	4851	8150943984084017	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc.o	71ada54a25cdbc85
-563	1598	8152350014495882	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	b5e9abe71826fcab
-550	3849	8152350014366090	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-1192	1420	8152353533812186	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-5503	5977	8150943996983937	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/EWARM_18443280873093131863.dir/startup_stm32g0b1xx.o	357ceb3c0220aaee
-3192	3680	8150943973861119	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_exti.o	730e3d77fd488ad7
-1422	1456	8152353536122165	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-35	1560	8152350009215186	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	616d543ad773fde9
-11	1186	8152353522003280	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-1718	2556	8152350026042847	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	fae57c1fd5849a83
-2230	3172	8152350031160840	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	d59f02d54f22e3ec
-2471	3086	8152350033579435	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	43fc472eb32fb56c
-5304	5904	8150943994983383	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_tim.o	80e430e2428f3a0
-2279	2715	8150943964740538	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/CMSIS_6603591812247902717.dir/system_stm32g0xx.o	4acd8fd9afbe1775
-2521	3022	8150943967164794	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal.o	4ad401ea8a6cede
-2836	3424	8150943970311342	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma.o	50cf6f4573868f57
-3024	3480	8150943972192357	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma_ex.o	fe800f75ad37b629
-3482	3912	8150943976770041	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash.o	fe465bb3307697ea
-5119	5899	8150943993141834	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_rcc.o	68dacaa2606745ef
-3682	4125	8150943978777144	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_gpio.o	dd5284079d7ab71e
-3426	4180	8150943976203530	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_fdcan.o	60950e0065af160a
-3630	4211	8150943978254702	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash_ex.o	f83c1ba84af5b601
-3914	4322	8150943981082174	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_iwdg.o	1f4535161c624225
-4324	4972	8150943985188392	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc_ex.o	5bcf87afab2cf33d
-4580	5049	8150943987750494	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_adc.o	f0356fa31d58be29
-4853	5302	8150943990481888	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_dma.o	33a048bc4777b283
-4705	5117	8150943988999373	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_crs.o	f6fb22dbd34b147d
-4974	5420	8150943991685932	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_exti.o	5e9af000cd3eb5bd
-5051	5501	8150943992455946	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_gpio.o	7bbe69e2d834335c
-5422	5901	8150943996175023	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_utils.o	2c69ed4313273e06
-592	2471	8152361894588864	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-592	2471	8152361894588864	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-38	3552	8152361889056282	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-38	3552	8152361889056282	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-3554	4716	8152361924220834	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-3554	4716	8152361924220834	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-3554	4716	8152361924220834	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-3554	4716	8152361924220834	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-4718	4833	8152361935859863	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-19	932	8152372143635571	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-19	932	8152372143635571	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-9	947	8152372143521371	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-9	947	8152372143521371	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-958	1115	8152372153014722	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-958	1115	8152372153014722	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-958	1115	8152372153014722	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-958	1115	8152372153014722	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-1117	1143	8152372154607258	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-20	915	8152376099258040	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-20	915	8152376099258040	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-10	2003	8152376099162712	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-10	2003	8152376099162712	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-2005	2174	8152376119115846	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-2005	2174	8152376119115846	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-2005	2174	8152376119115846	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-2005	2174	8152376119115846	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-2176	2203	8152376120817969	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-546	1991	8152406911490761	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-546	1991	8152406911490761	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	6db1372bc96e99a7
-32	2044	8152406906360261	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-32	2044	8152406906360261	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	9c75061de999c7ac
-2045	3174	8152406926483527	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-2045	3174	8152406926483527	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-2045	3174	8152406926483527	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-2045	3174	8152406926483527	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-3176	3304	8152406937800343	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-8	1770	8152408436027837	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-8	1770	8152408436027837	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	36a94a5debdafdc6
-1771	1932	8152408453660025	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-1771	1932	8152408453660025	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-1771	1932	8152408453660025	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	20c789fa489624da
-1771	1932	8152408453660025	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	20c789fa489624da
-1934	1961	8152408455294438	Y:/Working/Current code/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	96e6c008b73365cb
-34	931	8153217067085493	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	e036d15889347d68
-34	931	8153217067085493	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	e036d15889347d68
-57	1077	8153217067323328	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f914cab13739cc62
-57	1077	8153217067323328	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f914cab13739cc62
-73	1155	8153217067476995	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	c67a4ef9042464da
-73	1155	8153217067476995	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	c67a4ef9042464da
-932	1514	8153217076064903	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	88888d6d003c80cf
-932	1514	8153217076064903	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	88888d6d003c80cf
-1080	1799	8153217077545786	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	4e8bdffcf8a3a21b
-1080	1799	8153217077545786	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	4e8bdffcf8a3a21b
-1158	1884	8153217078321744	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	89dff6da618c0b4d
-1158	1884	8153217078321744	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	89dff6da618c0b4d
-1516	2258	8153217081907013	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	85b2d45eb613124e
-1516	2258	8153217081907013	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	85b2d45eb613124e
-1801	2285	8153217084756465	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	50f8816f232d58e9
-1801	2285	8153217084756465	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	50f8816f232d58e9
-1886	2487	8153217085611438	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	de3439e44195f04d
-1886	2487	8153217085611438	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	de3439e44195f04d
-47	2668	8153217067212651	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	348a8f84b27fe6a5
-47	2668	8153217067212651	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	348a8f84b27fe6a5
-2288	2699	8153217089623385	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/CMSIS_6603591812247902717.dir/system_stm32g0xx.o	f0dd68b269475807
-2288	2699	8153217089623385	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/CMSIS_6603591812247902717.dir/system_stm32g0xx.o	f0dd68b269475807
-2260	2777	8153217089351662	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	e49971761ed173cf
-2260	2777	8153217089351662	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	e49971761ed173cf
-2490	2972	8153217091640391	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal.o	db75548ac7885d7f
-2490	2972	8153217091640391	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal.o	db75548ac7885d7f
-2701	3160	8153217093761541	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_cortex.o	23e5f489002344b8
-2701	3160	8153217093761541	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_cortex.o	23e5f489002344b8
-2779	3320	8153217094533644	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma.o	a697562ba691e8dd
-2779	3320	8153217094533644	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma.o	a697562ba691e8dd
-2974	3389	8153217096490043	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma_ex.o	698a06364808eed3
-2974	3389	8153217096490043	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma_ex.o	698a06364808eed3
-2670	3521	8153217093444906	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_adc.o	79b524c8102dcec9
-2670	3521	8153217093444906	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_adc.o	79b524c8102dcec9
-3162	3652	8153217098369412	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_exti.o	2541eab1c2cff449
-3162	3652	8153217098369412	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_exti.o	2541eab1c2cff449
-3391	3848	8153217100651173	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash.o	fe327722729554a4
-3391	3848	8153217100651173	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash.o	fe327722729554a4
-3322	4069	8153217099971522	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_fdcan.o	5aa71cb89fac9127
-3322	4069	8153217099971522	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_fdcan.o	5aa71cb89fac9127
-3523	4101	8153217101976856	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash_ex.o	e710cb00298d815e
-3523	4101	8153217101976856	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash_ex.o	e710cb00298d815e
-3654	4147	8153217103282857	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_gpio.o	a478caf6e943fb0e
-3654	4147	8153217103282857	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_gpio.o	a478caf6e943fb0e
-3850	4221	8153217105249726	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_iwdg.o	1e0525adb7a32cef
-3850	4221	8153217105249726	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_iwdg.o	1e0525adb7a32cef
-4072	4496	8153217107459176	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr.o	d020e5792eb3173b
-4072	4496	8153217107459176	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr.o	d020e5792eb3173b
-4103	4586	8153217107770899	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr_ex.o	bc4ab0a16b1b1022
-4103	4586	8153217107770899	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr_ex.o	bc4ab0a16b1b1022
-4149	4774	8153217108232589	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc.o	f63e3b00c4aa5433
-4149	4774	8153217108232589	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc.o	f63e3b00c4aa5433
-4223	4867	8153217108982703	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc_ex.o	606310bfa92a5207
-4223	4867	8153217108982703	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc_ex.o	606310bfa92a5207
-4499	4973	8153217111730954	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_adc.o	243edbf26a53845c
-4499	4973	8153217111730954	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_adc.o	243edbf26a53845c
-4587	5003	8153217112615034	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_crs.o	534400e5f2159264
-4587	5003	8153217112615034	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_crs.o	534400e5f2159264
-4776	5242	8153217114509697	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_dma.o	ff03713c740935cf
-4776	5242	8153217114509697	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_dma.o	ff03713c740935cf
-4869	5310	8153217115441895	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_exti.o	dba67e3b1c0011e8
-4869	5310	8153217115441895	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_exti.o	dba67e3b1c0011e8
-4975	5384	8153217116500100	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_gpio.o	874dc193bd9189d9
-4975	5384	8153217116500100	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_gpio.o	874dc193bd9189d9
-5005	5735	8153217116796057	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_rcc.o	858796b1b7bc584c
-5005	5735	8153217116796057	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_rcc.o	858796b1b7bc584c
-5313	5757	8153217119877191	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_utils.o	7a6faba58a57ef82
-5313	5757	8153217119877191	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_utils.o	7a6faba58a57ef82
-5386	5788	8153217120603670	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/EWARM_18443280873093131863.dir/startup_stm32g0b1xx.o	62f78cf537c57cbf
-5386	5788	8153217120603670	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/EWARM_18443280873093131863.dir/startup_stm32g0b1xx.o	62f78cf537c57cbf
-5244	5828	8153217119181727	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_tim.o	2679cbada931769f
-5244	5828	8153217119181727	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_tim.o	2679cbada931769f
-5829	6023	8153217125035170	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	698ffffa365f1a7e
-5829	6023	8153217125035170	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	698ffffa365f1a7e
-5829	6023	8153217125035170	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	698ffffa365f1a7e
-6025	6050	8153217126993280	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	fd27b5d4a80ea924
-48	1043	8154004991782258	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	85b2d45eb613124e
-48	1043	8154004991782258	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	85b2d45eb613124e
-1044	1621	8154005001746775	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	698ffffa365f1a7e
-1044	1621	8154005001746775	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	698ffffa365f1a7e
-1044	1621	8154005001746775	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	698ffffa365f1a7e
-1044	1621	8154005001746775	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	698ffffa365f1a7e
-1623	1648	8154005007543611	Y:/backup/Clusters/Colored Segmented/RCJ/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	fd27b5d4a80ea924
+2637	3199	8156423646219537	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal.o	8d25c410b86dd096
+2878	3399	8159369855833651	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/CMSIS_6603591812247902717.dir/system_stm32g0xx.o	6527cde25fb1f09d
+5272	5751	8156423672572737	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_dma.o	f1b7d1ecc146d426
+4195	5170	8159369869016422	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_fdcan.o	629a4154ccac103a
+4071	4669	8156423660556002	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash_ex.o	7a24df0484f4a336
+43	1102	8159946856158968	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f03964d35b2b8039
+3003	3582	8156423649873198	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_cortex.o	e27eb07e6f0fa10f
+3763	4502	8156423657482198	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_fdcan.o	36b131e8921f7288
+4829	5292	8159369875352096	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_iwdg.o	dc2f30e284199a2d
+1530	2289	8159946871037656	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+9	551	8159948890336569	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+1930	2483	8159946875032858	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	a46a33157a3da40a
+5816	6257	8156423678001101	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_utils.o	c3ae2e47d0bcfd
+6335	6529	8156423683196635	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	75e3cbef80090c8b
+5746	6376	8159369884528532	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_adc.o	7df4e5e80cc06116
+780	1486	8156423627645603	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	50e68e404e9b01d6
+67	778	8156423620511759	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	deebdab44804d23
+3500	4193	8159369862071061	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma.o	2d65eeb04c5c1d95
+5916	6444	8159369886228281	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_crs.o	6435539871bcbb3e
+4671	5270	8156423666549020	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc.o	daaff675ce7de96f
+43	811	8156423620274012	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	33b499146dea7006
+5130	5523	8156423671152242	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_crs.o	462f2271b66fe7dd
+77	873	8156423620621646	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	86235429507cd26e
+814	1750	8156423627982540	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	cdba583cbc165c87
+4617	5247	8159369873234534	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_gpio.o	5882e8e52ff68c7
+4718	5350	8156423667025772	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc_ex.o	a4e2f33528aa413a
+875	1789	8156423628602806	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	eb55784b3c4994ac
+3102	3703	8159369858084072	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal.o	1b016c1c68916411
+1753	2412	8156423637375398	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	a86e855e20ea4d93
+1489	2467	8156423634734538	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	e661947959cedc73
+3311	4452	8159369860171743	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_adc.o	36f5d51d4ac61a16
+1792	2635	8156423637763887	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	c1a24d657e39ee30
+57	2936	8156423620414167	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	866bbc0b7757e323
+2469	3000	8156423644536995	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/CMSIS_6603591812247902717.dir/system_stm32g0xx.o	ca1c5884e074e4a1
+3852	4308	8156423658361893	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash.o	e3e4a26a90fd2ea9
+2414	3114	8156423643992091	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	9a89f3252f5f4a64
+3992	4614	8159369866982691	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_exti.o	a3b73f7097f4b22b
+1052	1528	8159946866260000	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+3201	3761	8156423651859889	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma_ex.o	c4e93cbfb9bdded4
+5352	5814	8156423673368450	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_exti.o	70a4296be2b32742
+3116	3850	8156423651009128	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma.o	4e4bd0869b92d973
+3584	4148	8156423655683345	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_exti.o	f0a9852d2571a87d
+2938	4069	8156423649227789	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_adc.o	fac97db571aa82e0
+4150	4619	8156423661342205	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_gpio.o	a8fce0ad89903f72
+34	2648	8159946856068959	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+5417	5927	8156423674014990	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_gpio.o	e18025cb8a077ccc
+4310	4716	8156423662951110	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_iwdg.o	7f8f0eff1887e49c
+4504	4967	8156423664889079	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr.o	b4ec733126d38412
+4455	5212	8159369871618388	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash_ex.o	10a6afc867fde0a3
+4622	5128	8156423666062510	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr_ex.o	ac81efad766bd766
+4969	5415	8156423669545422	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_adc.o	25a6f54132471e31
+5929	6009	8156423679139769	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/EWARM_18443280873093131863.dir/startup_stm32g0b1xx.o	b9b4651825f025b7
+5525	6123	8156423675094906	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_rcc.o	c7b9386ae8fe6c38
+5753	6333	8156423677376566	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_tim.o	e509d6ea722277b9
+6335	6529	8156423683196635	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	75e3cbef80090c8b
+1104	1758	8159946866777556	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+6531	6558	8156423685156346	Y:/backup/Clusters/Colored Segmented/RCJ/CAN_WORKING/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	844038503ee9689b
+3705	4230	8159369864122285	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_dma_ex.o	a16ac0a52f0817bb
+75	1222	8159946856483691	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+1224	1927	8159946867966011	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	9eb929e5fa53d2ca
+1760	2260	8159946873336363	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	c3c1153c2cfae998
+2262	2712	8159946878355868	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+3402	3989	8159369861082802	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_cortex.o	6e9217682d5eb553
+4233	4827	8159369869393516	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_flash.o	569a08b549e93b5
+5172	5743	8159369878779148	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr.o	a4f6557512196eeb
+5214	5913	8159369879210924	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_pwr_ex.o	cc0a91207d45020d
+5249	6096	8159369879552583	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc.o	da64bb6691019b3b
+10	751	8159371861651240	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_hal_rcc_ex.o	d3ea9fe8b5d726fb
+6098	6717	8159369888050285	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_dma.o	36086223538d5b7b
+6195	6791	8159369889019683	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_exti.o	67d08dec7538d906
+6379	7001	8159369890853939	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_gpio.o	57cf2b210ff41b54
+6446	7226	8159369891526642	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_rcc.o	3b3c5224de74a09c
+7003	7047	8159369897093278	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/EWARM_18443280873093131863.dir/startup_stm32g0b1xx.o	126bd45221a33ba3
+6793	7381	8159369895000410	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_utils.o	3e47c8fb5fae3f27
+6719	7501	8159369894252733	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/STM32G0xx_HAL_Driver_14800413719917403617.dir/stm32g0xx_ll_tim.o	a36c9c4c72a840eb
+552	757	8159948895766883	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+552	757	8159948895766883	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+760	787	8159948897847683	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+565	1393	8159962769833486	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+565	1393	8159962769833486	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+41	1425	8159962764599279	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+41	1425	8159962764599279	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+583	1521	8159962770019911	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+583	1521	8159962770019911	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+574	1553	8159962769927404	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+574	1553	8159962769927404	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+1555	2626	8159962779738153	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1555	2626	8159962779738153	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1555	2626	8159962779738153	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1555	2626	8159962779738153	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2628	2746	8159962790469751	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+13	732	8159963211539467	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+13	732	8159963211539467	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+733	896	8159963218727116	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+733	896	8159963218727116	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+733	896	8159963218727116	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+733	896	8159963218727116	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+898	923	8159963220388734	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+10	720	8159964674527331	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+10	720	8159964674527331	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+721	887	8159964681632210	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+721	887	8159964681632210	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+721	887	8159964681632210	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+721	887	8159964681632210	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+889	917	8159964683314448	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+13	1975	8159977545719369	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+13	1975	8159977545719369	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+1976	2145	8159977565349072	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1976	2145	8159977565349072	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1976	2145	8159977565349072	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1976	2145	8159977565349072	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2147	2176	8159977567066667	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+35	906	8160027256203340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f03964d35b2b8039
+35	906	8160027256203340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f03964d35b2b8039
+62	1007	8160027256460354	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+62	1007	8160027256460354	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+11	1081	8160027255952872	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+11	1081	8160027255952872	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+907	1405	8160027264920082	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+907	1405	8160027264920082	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+1010	1681	8160027265945985	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+1010	1681	8160027265945985	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+1084	1819	8160027266682216	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	9eb929e5fa53d2ca
+1084	1819	8160027266682216	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	9eb929e5fa53d2ca
+1407	2119	8160027269919638	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+1407	2119	8160027269919638	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+1684	2251	8160027272682564	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	c3c1153c2cfae998
+1684	2251	8160027272682564	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	c3c1153c2cfae998
+1822	2398	8160027274068469	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	a46a33157a3da40a
+1822	2398	8160027274068469	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	a46a33157a3da40a
+26	2518	8160027256103161	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+26	2518	8160027256103161	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+2122	2602	8160027277067035	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+2122	2602	8160027277067035	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+2605	2790	8160027281886795	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+2605	2790	8160027281886795	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2605	2790	8160027281886795	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+2605	2790	8160027281886795	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2793	2823	8160027283770899	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+83	716	8160029578325771	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f03964d35b2b8039
+83	716	8160029578325771	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/fdcan.o	f03964d35b2b8039
+42	760	8160029577937377	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+42	760	8160029577937377	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/App_RAM.o	dc457e95e8bb7d12
+114	813	8160029578635921	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+114	813	8160029578635921	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/FDCAN_DRIVER.o	1834b21dc0ab7aaf
+718	1216	8160029584673935	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+718	1216	8160029584673935	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+763	1465	8160029585124027	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+763	1465	8160029585124027	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+816	1494	8160029585656384	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	9eb929e5fa53d2ca
+816	1494	8160029585656384	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/ONE_WIRE_COMM.o	9eb929e5fa53d2ca
+1467	1926	8160029592173808	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	c3c1153c2cfae998
+1467	1926	8160029592173808	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_hal_msp.o	c3c1153c2cfae998
+1218	1951	8160029589680965	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+1218	1951	8160029589680965	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+1496	2061	8160029592453194	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	a46a33157a3da40a
+1496	2061	8160029592453194	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/stm32g0xx_it.o	a46a33157a3da40a
+69	2298	8160029578187427	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+69	2298	8160029578187427	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Display_Driver.o	9882b1cc3171c1d6
+1928	2361	8160029596780427	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+1928	2361	8160029596780427	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/VOLTAGE_CAL.o	8f450f4668721b65
+2363	2530	8160029601126536	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+2363	2530	8160029601126536	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2363	2530	8160029601126536	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+2363	2530	8160029601126536	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+2532	2555	8160029602810256	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+9	575	8160030116280693	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+9	575	8160030116280693	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+576	744	8160030121950105	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+576	744	8160030121950105	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+576	744	8160030121950105	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+576	744	8160030121950105	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+745	769	8160030123640197	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+9	910	8160031954251834	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+9	910	8160031954251834	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+911	1070	8160031963265438	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+911	1070	8160031963265438	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+911	1070	8160031963265438	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+911	1070	8160031963265438	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1072	1097	8160031964875359	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+11	891	8160053563789578	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+11	891	8160053563789578	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+892	1060	8160053572588780	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+892	1060	8160053572588780	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+892	1060	8160053572588780	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+892	1060	8160053572588780	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1063	1091	8160053574300407	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+7	767	8160057565805721	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+7	767	8160057565805721	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+768	930	8160057573416104	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+768	930	8160057573416104	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+768	930	8160057573416104	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+768	930	8160057573416104	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+932	958	8160057575050873	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+12	773	8160060468354541	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+12	773	8160060468354541	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+774	933	8160060475971188	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+774	933	8160060475971188	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+774	933	8160060475971188	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+774	933	8160060475971188	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+936	965	8160060477584221	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d
+9	781	8160064218660340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+9	781	8160064218660340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/main.o	8687a956857a7b51
+22	920	8160064218785798	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+22	920	8160064218785798	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/Misc_Functions.o	c175a1ecbb484183
+33	1018	8160064218888591	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+33	1018	8160064218888591	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Obj/Core_13247989168731456611.dir/STM32_Config.o	c43f3a8f78bd84ca
+1020	1182	8160064228764340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1020	1182	8160064228764340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1020	1182	8160064228764340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.out	61a1def4298225fc
+1020	1182	8160064228764340	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/List/LCD_Cluster_G0_Rev0.map	61a1def4298225fc
+1184	1208	8160064230414077	Y:/Working/Current code/Clusters/Colored Segmented/RCJ-Cluster/Firmware/EWARM/LCD_Cluster_G0_Rev0/Exe/LCD_Cluster_G0_Rev0.hex	2d75ff4dfab6c5d

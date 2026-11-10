@@ -13,6 +13,8 @@
 #include "stm32g0xx_ll_tim.h"
 
 #define TIM2_PRC    64
+void System_Init(void);
+void SystemClock_Config(void);    
 extern ADC_HandleTypeDef hadc1;
 void SystemClock_Config(void);
 void MX_IWDG_Init(void);

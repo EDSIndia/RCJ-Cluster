@@ -2,7 +2,7 @@
 	"arguments" : 
 	[
 		"C:\\iar\\ewarm-9.70.2\\arm\\bin\\iccarm.exe",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Core\\Src\\Misc_Functions.c",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Core\\Src\\Misc_Functions.c",
 		"-nostdinc",
 		"-undef",
 		"-Wno-unaligned-access",
@@ -16,15 +16,15 @@
 		"-isystem",
 		"C:\\iar\\ewarm-9.70.2\\arm\\inc\\c",
 		"-I",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Core\\Inc\\",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Core\\Inc\\",
 		"-I",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\",
 		"-I",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\Legacy\\",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Drivers\\STM32G0xx_HAL_Driver\\Inc\\Legacy\\",
 		"-I",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Drivers\\CMSIS\\Device\\ST\\STM32G0xx\\Include\\",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Drivers\\CMSIS\\Device\\ST\\STM32G0xx\\Include\\",
 		"-I",
-		"Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Drivers\\CMSIS\\Include\\",
+		"Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Drivers\\CMSIS\\Include\\",
 		"--target=armv7m-none-eabi",
 		"-D",
 		"__CHAR_BITS__=8",
@@ -863,7 +863,7 @@
 		"-x",
 		"c"
 	],
-	"directory" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Core\\Src",
-	"file" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\Core\\Src\\Misc_Functions.c",
-	"output" : "Y:\\backup\\Clusters\\Colored Segmented\\RCJ\\Firmware\\EWARM\\LCD_Cluster_G0_Rev0\\Obj\\Core_13247989168731456611.dir\\Misc_Functions.o"
+	"directory" : "Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Core\\Src",
+	"file" : "Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\Core\\Src\\Misc_Functions.c",
+	"output" : "Y:\\Working\\Current code\\Clusters\\Colored Segmented\\RCJ-Cluster\\Firmware\\EWARM\\LCD_Cluster_G0_Rev0\\Obj\\Core_13247989168731456611.dir\\Misc_Functions.o"
 }

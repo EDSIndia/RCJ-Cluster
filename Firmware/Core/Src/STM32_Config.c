@@ -1,35 +1,54 @@
 /******************************************************************************
-  * File Name          : STM32_Config.h
-  * Description        : This file provides code for the configuration MCU
-  * Author             : Santanu Roy
-  * Date               : 25th Jan 2022
+* File Name          : STM32_Config.h
+* Description        : This file provides code for the configuration MCU
+* Author             : Santanu Roy
+* Date               : 25th Jan 2022
 ********************************************************************************/
 
 #include "main.h"
 
+/******************************************************************************
+* File Name          : STM32_Config.h
+* Description        : Initialize all configured peripherals
+* Author             : 
+* Date               : 25th Jan 2022
+********************************************************************************/
+void System_Init(void)
+{
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+  
+  SystemClock_Config();                                                         // HSI 64Mhz
+  MX_GPIO_Init();                                                               //LCD SEGMENTS,FAULT SENSING AND FAULT DISPLAY
+  MX_ADC1_Init();                                                               // 12B RESOLTION FOR EBV SENSING
+  MX_FDCAN1_Init();                                                             // 500 KBPS FOR DATA RECEPTION
+  FDCAN_Config();
+  //MX_TIM2_Init();                                                             // CURRENTLY UNUSED
+  MX_IWDG_Init();                                                               // 32 SEC RESET , 1 SEC RELOAD  
+}
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
+* @brief System Clock Configuration
+* @retval None
+*/
 void SystemClock_Config(void)
 {
   LL_FLASH_SetLatency(LL_FLASH_LATENCY_2);
   while(LL_FLASH_GetLatency() != LL_FLASH_LATENCY_2)
   {
   }
-
+  
   /* HSI configuration and activation */
   LL_RCC_HSI_Enable();
   while(LL_RCC_HSI_IsReady() != 1)
   {
   }
-
+  
   /* LSI configuration and activation */
   LL_RCC_LSI_Enable();
   while(LL_RCC_LSI_IsReady() != 1)
   {
   }
-
+  
   /* Main PLL configuration and activation */
   LL_RCC_PLL_ConfigDomain_SYS(LL_RCC_PLLSOURCE_HSI, LL_RCC_PLLM_DIV_1, 8, LL_RCC_PLLR_DIV_2);
   LL_RCC_PLL_Enable();
@@ -37,16 +56,16 @@ void SystemClock_Config(void)
   while(LL_RCC_PLL_IsReady() != 1)
   {
   }
-
+  
   /* Set AHB prescaler*/
   LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
-
+  
   /* Sysclk activation on the main PLL */
   LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_PLL);
   while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_PLL)
   {
   }
-
+  
   /* Set APB1 prescaler*/
   LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_1);
   /* Update CMSIS variable (which can be updated also through SystemCoreClockUpdate function) */
@@ -56,8 +75,8 @@ void SystemClock_Config(void)
   SysTick_Config((64000) - 1);
   NVIC_SetPriority(SysTick_IRQn, 0);
   NVIC_EnableIRQ(SysTick_IRQn);
-
-   /* Update the time base */
+  
+  /* Update the time base */
   if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
   {
     Error_Handler();
@@ -73,12 +92,12 @@ void MX_TIM2_Init(void)
 {
   
   LL_TIM_InitTypeDef TIM_InitStruct = {0};
-
+  
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-
+  
   /* Peripheral clock enable */
   LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_TIM2);
-
+  
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
   /**TIM2 GPIO Configuration
   PA2   ------> TIM2_CH3
@@ -90,11 +109,11 @@ void MX_TIM2_Init(void)
   GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;                                       // PULL UP
   GPIO_InitStruct.Alternate = LL_GPIO_AF_2;
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
+  
   /* TIM2 interrupt Init */
   NVIC_SetPriority(TIM2_IRQn, 0);
   NVIC_EnableIRQ(TIM2_IRQn);
-
+  
   TIM_InitStruct.Prescaler = 64-1;                                              // 64/64=1MHZ                     
   TIM_InitStruct.CounterMode = LL_TIM_COUNTERMODE_UP;
   TIM_InitStruct.Autoreload = ARR;                                              // 1000,000 Hz /65535=15.25 Hz Minimum Capture Freq.          
@@ -107,7 +126,7 @@ void MX_TIM2_Init(void)
   LL_TIM_IC_SetPrescaler(TIM2, LL_TIM_CHANNEL_CH3, LL_TIM_ICPSC_DIV1);
   LL_TIM_IC_SetFilter(TIM2, LL_TIM_CHANNEL_CH3, LL_TIM_IC_FILTER_FDIV1);
   LL_TIM_IC_SetPolarity(TIM2, LL_TIM_CHANNEL_CH3, LL_TIM_IC_POLARITY_BOTHEDGE);
-
+  
   
   LL_TIM_EnableCounter(TIM2);                                                   //Start the Timer Counting
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH3);                            //Channel 3 Enable of Timer 2 for capture
@@ -118,27 +137,27 @@ void MX_TIM2_Init(void)
 
 
 /** Configure pins as
-         * Input
-        * Output
+* Input
+* Output
 */
 void MX_GPIO_Init(void)
 {
-// LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
+  // LL_EXTI_InitTypeDef EXTI_InitStruct = {0};
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
-
+  
   /* GPIO Ports Clock Enable */
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOC);
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOF);
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOB);
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOD);
- 
+  
   // LCD COMMON
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
- 
+  
   GPIO_InitStruct.Pin = LCD_COM1_PIN;LL_GPIO_Init(LCD_COM1_PORT, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LCD_COM2_PIN;LL_GPIO_Init(LCD_COM2_PORT, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LCD_COM3_PIN;LL_GPIO_Init(LCD_COM3_PORT, &GPIO_InitStruct);
@@ -149,7 +168,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = LCD_COM2N_PIN;LL_GPIO_Init(LCD_COM2N_PORT, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LCD_COM3N_PIN;LL_GPIO_Init(LCD_COM3N_PORT, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LCD_COM4N_PIN;LL_GPIO_Init(LCD_COM4N_PORT, &GPIO_InitStruct);
-   
+  
   // LCD Segment
   GPIO_InitStruct.Pin = LCD_SEG17_PIN; LL_GPIO_Init(LCD_SEG17_PORT, &GPIO_InitStruct);
   GPIO_InitStruct.Pin = LCD_SEG18_PIN;LL_GPIO_Init(LCD_SEG18_PORT, &GPIO_InitStruct);
@@ -164,47 +183,54 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = LCD_SEG27_PIN;LL_GPIO_Init(LCD_SEG27_PORT, &GPIO_InitStruct);
   
   /**/
-//  GPIO_InitStruct.Pin = IN_LW_SENSE_Pin;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
-//  LL_GPIO_Init(IN_LW_SENSE_GPIO_Port, &GPIO_InitStruct);
-//
-//  /**/
-//  GPIO_InitStruct.Pin = IN_RW_SENSE_Pin;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
-//  LL_GPIO_Init(IN_RW_SENSE_GPIO_Port, &GPIO_InitStruct);
-// 
-//  /**/
+  GPIO_InitStruct.Pin = IN_LW_SENSE_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(IN_LW_SENSE_GPIO_Port, &GPIO_InitStruct);
+  
+  /**/
+  GPIO_InitStruct.Pin = IN_RW_SENSE_Pin;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(IN_RW_SENSE_GPIO_Port, &GPIO_InitStruct);
+  
+  /**/
+  GPIO_InitStruct.Pin =  HL_SENSE_Pin ;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+  LL_GPIO_Init(HL_SENSE_GPIO_Port, &GPIO_InitStruct);
+  
+  /**/
   GPIO_InitStruct.Pin = LCD_BKL_PIN_Pin ;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(LCD_BKL_PIN_GPIO_Port, &GPIO_InitStruct);
-//  
-//  GPIO_InitStruct.Pin =  HL_SENSE_Pin ;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
-//  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-//  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-//  LL_GPIO_Init(LCD_BKL_PIN_GPIO_Port, &GPIO_InitStruct);
-//
-//  /**/
-//  GPIO_InitStruct.Pin = LED_LW_PIN;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-//  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-//  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-//  LL_GPIO_Init(LED_LW_PORT, &GPIO_InitStruct);
-
-//  /**/
-//  GPIO_InitStruct.Pin = ODO_RST_PIN;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
-//  LL_GPIO_Init(ODO_RST_PORT, &GPIO_InitStruct);
-// 
-//  /**/
+  
+  /**/
+  GPIO_InitStruct.Pin = LED_LW_PIN;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(LED_LW_PORT, &GPIO_InitStruct);
+  
+  /**/
+  GPIO_InitStruct.Pin = LED_RW_PIN | HL_Pin;                                           
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(LED_RW_PORT, &GPIO_InitStruct);
+  
+  /**/
+    GPIO_InitStruct.Pin = ODO_RST_PIN;                   
+    GPIO_InitStruct.Mode = LL_GPIO_MODE_INPUT;
+    GPIO_InitStruct.Pull = LL_GPIO_PULL_UP;
+    LL_GPIO_Init(ODO_RST_PORT, &GPIO_InitStruct);
+  
+  /**/
   GPIO_InitStruct.Pin = DI_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
@@ -213,18 +239,17 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(DI_GPIO_Port, &GPIO_InitStruct);
   
   
-/* ------------------------------ */
-/*        EXTRA LED PINS          */
-/* ------------------------------ */
-
-//   
-//  GPIO_InitStruct.Pin = ORAN_LED_Pin;LL_GPIO_Init(ORAN_LED_Pin_Port, &GPIO_InitStruct);
-//  GPIO_InitStruct.Pin = RED_LED_Pin;LL_GPIO_Init(RED_LED_Pin_Port, &GPIO_InitStruct);
-//  GPIO_InitStruct.Pin = YLW_LED_Pin;LL_GPIO_Init(YLW_LED_Pin_Port, &GPIO_InitStruct);
-//  GPIO_InitStruct.Pin = GRN_LED_Pin;LL_GPIO_Init(GRN_LED_Pin_Port, &GPIO_InitStruct);
-//  GPIO_InitStruct.Pin = LOGO_LED_Pin;LL_GPIO_Init(LOGO_LED_Pin_Port, &GPIO_InitStruct);
-   
-
+  /* ------------------------------ */
+  /*        EXTRA LED PINS          */
+  /* ------------------------------ */ 
+  
+  GPIO_InitStruct.Pin = YLW_LED_Pin|ORAN_LED_Pin |RED_LED_Pin|GRN_LED_Pin|LOGO_LED_Pin ;
+  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  LL_GPIO_Init(GPIOB, &GPIO_InitStruct); 
+  
   /**/
   GPIO_InitStruct.Pin = LAT_Pin;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
@@ -232,89 +257,82 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(LAT_GPIO_Port, &GPIO_InitStruct);
-
+  
   /**/
-  GPIO_InitStruct.Pin = CLK_Pin;
+  GPIO_InitStruct.Pin = CLK_Pin ;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_OPENDRAIN;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(CLK_GPIO_Port, &GPIO_InitStruct);
   
-  GPIO_InitStruct.Pin = CAN_STB;
+  
+  GPIO_InitStruct.Pin = CAN_STB ;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
   LL_GPIO_Init(CAN_STB_Port, &GPIO_InitStruct);
-
-//  /**/
-//  GPIO_InitStruct.Pin = LED_RW_PIN | HL_Pin;                                           // debug pin
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-//  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-//  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-//  LL_GPIO_Init(LED_RW_PORT, &GPIO_InitStruct);
-   
-//  /**/
-////  GPIO_InitStruct.Pin = LOW_SOC_LED_Pin;
-////  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-////  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-////  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-////  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-////  LL_GPIO_Init(LOW_SOC_LED_GPIO_Port, &GPIO_InitStruct);
-////
-////  /**/
-//  GPIO_InitStruct.Pin = BRAKE_LED_Pin;
-//  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
-//  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
-//  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
-//  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
-//  LL_GPIO_Init(BRAKE_LED_GPIO_Port, &GPIO_InitStruct);
-//
-//  
   
-//  /**/
-//  LL_EXTI_SetEXTISource(LL_EXTI_CONFIG_PORTC, LL_EXTI_CONFIG_LINE15);
-//
-//  /**/
-//  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_15;
-//  EXTI_InitStruct.LineCommand = ENABLE;
-//  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
-//  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_FALLING;
-//  LL_EXTI_Init(&EXTI_InitStruct);
-//
-//  /**/
-//  LL_GPIO_SetPinPull(GPIOC, LL_GPIO_PIN_15, LL_GPIO_PULL_UP);
-//
-//  /**/
-//  LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_15, LL_GPIO_MODE_INPUT);
-//
-//  /* EXTI interrupt init*/
-//  NVIC_SetPriority(EXTI4_15_IRQn, 5);
-//  NVIC_EnableIRQ(EXTI4_15_IRQn);
+  //  /**/
+  ////  GPIO_InitStruct.Pin = LOW_SOC_LED_Pin;
+  ////  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  ////  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  ////  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  ////  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  ////  LL_GPIO_Init(LOW_SOC_LED_GPIO_Port, &GPIO_InitStruct);
+  ////
+  ////  /**/
+  //  GPIO_InitStruct.Pin = BRAKE_LED_Pin;
+  //  GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
+  //  GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
+  //  GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
+  //  GPIO_InitStruct.Pull = LL_GPIO_PULL_NO;
+  //  LL_GPIO_Init(BRAKE_LED_GPIO_Port, &GPIO_InitStruct);
+  //
+  //  
+  
+  //  /**/
+  //  LL_EXTI_SetEXTISource(LL_EXTI_CONFIG_PORTC, LL_EXTI_CONFIG_LINE15);
+  //
+  //  /**/
+  //  EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_15;
+  //  EXTI_InitStruct.LineCommand = ENABLE;
+  //  EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
+  //  EXTI_InitStruct.Trigger = LL_EXTI_TRIGGER_FALLING;
+  //  LL_EXTI_Init(&EXTI_InitStruct);
+  //
+  //  /**/
+  //  LL_GPIO_SetPinPull(GPIOC, LL_GPIO_PIN_15, LL_GPIO_PULL_UP);
+  //
+  //  /**/
+  //  LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_15, LL_GPIO_MODE_INPUT);
+  //
+  //  /* EXTI interrupt init*/
+  //  NVIC_SetPriority(EXTI4_15_IRQn, 5);
+  //  NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
 
 
 /**
-  * Enable ADC controller 
-  */
+* Enable ADC controller 
+*/
 
 ADC_HandleTypeDef hadc1;
 void MX_ADC1_Init(void)
 {
-
+  
   /* USER CODE BEGIN ADC1_Init 0 */
-
+  
   /* USER CODE END ADC1_Init 0 */
-
+  
   ADC_ChannelConfTypeDef sConfig = {0};
-
+  
   /* USER CODE BEGIN ADC1_Init 1 */
-
+  
   /* USER CODE END ADC1_Init 1 */
-
+  
   /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
   */
   hadc1.Instance = ADC1;
@@ -339,7 +357,7 @@ void MX_ADC1_Init(void)
   {
     Error_Handler();
   }
-
+  
   /** Configure Regular Channel
   */
   sConfig.Channel = ADC_CHANNEL_0;
@@ -350,23 +368,23 @@ void MX_ADC1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN ADC1_Init 2 */
- 
+  
   /* USER CODE END ADC1_Init 2 */
-
+  
 }
 
 void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
 {
-
+  
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(adcHandle->Instance==ADC1)
   {
-  /* USER CODE BEGIN ADC1_MspInit 0 */
-
-  /* USER CODE END ADC1_MspInit 0 */
+    /* USER CODE BEGIN ADC1_MspInit 0 */
+    
+    /* USER CODE END ADC1_MspInit 0 */
     /* ADC1 clock enable */
     __HAL_RCC_ADC_CLK_ENABLE();
-
+    
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
     PA0     ------> ADC1_IN0
@@ -375,48 +393,48 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /* USER CODE BEGIN ADC1_MspInit 1 */
-
-  /* USER CODE END ADC1_MspInit 1 */
+    
+    /* USER CODE BEGIN ADC1_MspInit 1 */
+    
+    /* USER CODE END ADC1_MspInit 1 */
   }
 }
 
 void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 {
-
+  
   if(adcHandle->Instance==ADC1)
   {
-  /* USER CODE BEGIN ADC1_MspDeInit 0 */
-
-  /* USER CODE END ADC1_MspDeInit 0 */
+    /* USER CODE BEGIN ADC1_MspDeInit 0 */
+    
+    /* USER CODE END ADC1_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_ADC_CLK_DISABLE();
-
+    
     /**ADC1 GPIO Configuration
     PA0     ------> ADC1_IN0
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_0);
-
-  /* USER CODE BEGIN ADC1_MspDeInit 1 */
-
-  /* USER CODE END ADC1_MspDeInit 1 */
+    
+    /* USER CODE BEGIN ADC1_MspDeInit 1 */
+    
+    /* USER CODE END ADC1_MspDeInit 1 */
   }
 }
-                   
+
 
 /**
-  * Enable IWDG controller 
-  */
+* Enable IWDG controller 
+*/
 void MX_IWDG_Init(void)
 {
-
+  
   /* USER CODE BEGIN IWDG_Init 0 */
-
+  
   /* USER CODE END IWDG_Init 0 */
-
+  
   /* USER CODE BEGIN IWDG_Init 1 */
-
+  
   /* USER CODE END IWDG_Init 1 */
   LL_IWDG_Enable(IWDG);
   LL_IWDG_EnableWriteAccess(IWDG);
@@ -425,12 +443,12 @@ void MX_IWDG_Init(void)
   while (LL_IWDG_IsReady(IWDG) != 1)
   {
   }
-
+  
   LL_IWDG_ReloadCounter(IWDG);
   /* USER CODE BEGIN IWDG_Init 2 */
-
+  
   /* USER CODE END IWDG_Init 2 */
-
+  
 }
 
 void Configure_Buzzer(void)
@@ -446,17 +464,17 @@ void Configure_Buzzer(void)
 
 
 
-FDCAN_HandleTypeDef hfdcan1;
+FDCAN_HandleTypeDef hfdcan1 ={0};
 
 /* FDCAN1 init function */
 void MX_FDCAN1_Init(void)                                                       //64MHZ,500KBPS_/2=250KBPS,5000,200ns
 {
-
+  
   hfdcan1.Instance                  = FDCAN1;
   hfdcan1.Init.ClockDivider         = FDCAN_CLOCK_DIV1;                         //64MHZ FDCAN Peripheral Clock
   hfdcan1.Init.FrameFormat          = FDCAN_FRAME_FD_NO_BRS;
   hfdcan1.Init.Mode                 = FDCAN_MODE_NORMAL;
-  hfdcan1.Init.AutoRetransmission   = ENABLE;
+  hfdcan1.Init.AutoRetransmission   = DISABLE;
   hfdcan1.Init.TransmitPause        = ENABLE;
   hfdcan1.Init.ProtocolException    = DISABLE;
   hfdcan1.Init.NominalPrescaler     = 1;                                        //1_500kbps AND 2_250kbps
@@ -474,6 +492,7 @@ void MX_FDCAN1_Init(void)                                                       
   {
     Error_Handler();
   }
+  LL_GPIO_ResetOutputPin(CAN_STB_Port,CAN_STB);
   
   /* USER CODE BEGIN FDCAN1_Init 2 */
   /* USER CODE END FDCAN1_Init 2 */
@@ -482,19 +501,20 @@ void MX_FDCAN1_Init(void)                                                       
 
 void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef* fdcanHandle)
 {
-
+  
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(fdcanHandle->Instance==FDCAN1)
   {
-  /* USER CODE BEGIN FDCAN1_MspInit 0 */
-
-  /* USER CODE END FDCAN1_MspInit 0 */
+    /* USER CODE BEGIN FDCAN1_MspInit 0 */
+    
+    /* USER CODE END FDCAN1_MspInit 0 */
     LL_RCC_SetFDCANClockSource(LL_RCC_FDCAN_CLKSOURCE_PCLK1);
-
+    
     /* FDCAN1 clock enable */
     __HAL_RCC_FDCAN_CLK_ENABLE();
-
+    
     __HAL_RCC_GPIOB_CLK_ENABLE();
+    
     /**FDCAN1 GPIO Configuration
     PB8     ------> FDCAN1_RX
     PB9     ------> FDCAN1_TX
@@ -505,37 +525,37 @@ void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef* fdcanHandle)
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = GPIO_AF3_FDCAN1;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
+    
     /* FDCAN1 interrupt Init */
     HAL_NVIC_SetPriority(TIM16_FDCAN_IT0_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM16_FDCAN_IT0_IRQn);
-  /* USER CODE BEGIN FDCAN1_MspInit 1 */
-
-  /* USER CODE END FDCAN1_MspInit 1 */
+    /* USER CODE BEGIN FDCAN1_MspInit 1 */
+    
+    /* USER CODE END FDCAN1_MspInit 1 */
   }
 }
 
 void HAL_FDCAN_MspDeInit(FDCAN_HandleTypeDef* fdcanHandle)
 {
-
+  
   if(fdcanHandle->Instance==FDCAN1)
   {
-  /* USER CODE BEGIN FDCAN1_MspDeInit 0 */
-
-  /* USER CODE END FDCAN1_MspDeInit 0 */
+    /* USER CODE BEGIN FDCAN1_MspDeInit 0 */
+    
+    /* USER CODE END FDCAN1_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_FDCAN_CLK_DISABLE();
-
+    
     /**FDCAN1 GPIO Configuration
     PB8     ------> FDCAN1_RX
     PB9     ------> FDCAN1_TX
     */
     HAL_GPIO_DeInit(GPIOB, GPIO_PIN_8|GPIO_PIN_9);
-
+    
     /* FDCAN1 interrupt Deinit */
     HAL_NVIC_DisableIRQ(TIM16_FDCAN_IT0_IRQn);
-  /* USER CODE BEGIN FDCAN1_MspDeInit 1 */
-
-  /* USER CODE END FDCAN1_MspDeInit 1 */
+    /* USER CODE BEGIN FDCAN1_MspDeInit 1 */
+    
+    /* USER CODE END FDCAN1_MspDeInit 1 */
   }
 }

@@ -600,17 +600,17 @@ void LCD_Drive(void)
     if (LCD_Reg[0] & BIT(17)) {CLEAR_BITS(Segment,10);} else {SET_BITS(Segment,10);}//14
     if (LCD_Reg[0] & BIT(16)) {CLEAR_BITS(Segment,9);}  else {SET_BITS(Segment,9);}//15
     if (LCD_Reg[0] & BIT(15)) {CLEAR_BITS(Segment,8);}  else {SET_BITS(Segment,8);}//16
-    if (LCD_Reg[0] & BIT(14)) SEG17_RST; else SEG17_SET;
+    if (LCD_Reg[0] & BIT(14))  SEG17_RST; else SEG17_SET;
     if (LCD_Reg[0] & BIT(13))  SEG18_RST; else SEG18_SET;
     if (LCD_Reg[0] & BIT(12))  SEG19_RST; else SEG19_SET;
     if (LCD_Reg[0] & BIT(11))  SEG20_RST; else SEG20_SET;
     if (LCD_Reg[0] & BIT(10))  SEG21_RST; else SEG21_SET;
-    if (LCD_Reg[0] & BIT(5))  SEG22_RST; else SEG22_SET;
-    if (LCD_Reg[0] & BIT(4))  SEG23_RST; else SEG23_SET;
-    if (LCD_Reg[0] & BIT(3))  SEG24_RST; else SEG24_SET;
-    if (LCD_Reg[0] & BIT(2))  SEG25_RST; else SEG25_SET;
-    if (LCD_Reg[0] & BIT(1))  SEG26_RST; else SEG26_SET;
-    if (LCD_Reg[0] & BIT(0))  SEG27_RST; else SEG27_SET;
+    if (LCD_Reg[0] & BIT(5))   SEG22_RST; else SEG22_SET;
+    if (LCD_Reg[0] & BIT(4))   SEG23_RST; else SEG23_SET;
+    if (LCD_Reg[0] & BIT(3))   SEG24_RST; else SEG24_SET;
+    if (LCD_Reg[0] & BIT(2))   SEG25_RST; else SEG25_SET;
+    if (LCD_Reg[0] & BIT(1))   SEG26_RST; else SEG26_SET;
+    if (LCD_Reg[0] & BIT(0))   SEG27_RST; else SEG27_SET;
     Set_Data(Segment);
     COM1_RST;
     break;
@@ -832,10 +832,10 @@ void Set_Data(uint16_t Data_Val)
     else    DATA_595_RESET;
     /**************** creating clock ************************/
     CLK_595_SET;
-    for(int i = 0;i < 100;i++){__NOP();}
+    for(int i = 0;i < 10;i++){__NOP();}
     //    mSec_Delay(1);
     CLK_595_RESET;
-    for(int i = 0;i < 100;i++){__NOP();}
+    for(int i = 0;i < 10;i++){__NOP();}
     //mSec_Delay(1);            // Set Clock Pulse
     /*******************************************************/  
     
@@ -844,9 +844,9 @@ void Set_Data(uint16_t Data_Val)
     /****************************************************/
   } 					                        	        // Delay to remove ghost Image
   LAT_595_SET;
-  for(int i = 0;i < 100;i++){__NOP();}
+  for(int i = 0;i < 10;i++){__NOP();}
   LAT_595_RESET;
-  for(int i = 0;i < 100;i++){__NOP();}
+  for(int i = 0;i < 10;i++){__NOP();}
 }
 
 /*******************************************************************************

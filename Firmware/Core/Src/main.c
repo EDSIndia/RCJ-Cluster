@@ -48,14 +48,13 @@
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-void SystemClock_Config(void);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
 
 /* USER CODE END 0 */
 
@@ -65,34 +64,10 @@ void SystemClock_Config(void);
 */
 int main(void)
 {
+  /* system initialisation */  
+  System_Init();
   
-  /* USER CODE BEGIN 1 */
-  
-  /* USER CODE END 1 */
-  
-  /* MCU Configuration--------------------------------------------------------*/
-  
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-  
-  /* USER CODE BEGIN Init */
-  
-  /* USER CODE END Init */
-  
-  /* Configure the system clock */
-  SystemClock_Config();
-  
-  /* USER CODE BEGIN SysInit */
-  
-  /* USER CODE END SysInit */
-  
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_FDCAN1_Init();
-  FDCAN_Config();
- // MX_TIM2_Init();
-  MX_IWDG_Init();
+  /* Application initialisation */
   App_Init();         
   
   /* Infinite loop */  
@@ -100,7 +75,6 @@ int main(void)
   {       
     /* Read Battery Voltage */
     LOW_Voltage_Detection(); 
-    Flag_BatteryLow = RESET; // TESTING PURPOSE
     
     /* Check Low battery */
     if(Flag_BatteryLow)                                                         // FLAG WILL BE SET,BATTERY VOLTAGE < 60 volt
@@ -114,9 +88,8 @@ int main(void)
     else
     { 
       /* Odometer Reset */
-      //      if(LL_GPIO_IsInputPinSet(ODO_RST_PORT,ODO_RST_PIN)==RESET && Init_Time == 2){Init_Time = 0;Vehicle.ODO = 0;Write_OdoMeter();CONFIG_BUZZ();}
-      //      else 
-      if (Init_Time == 1){CONFIG_BUZZ();}
+      if(LL_GPIO_IsInputPinSet(ODO_RST_PORT,ODO_RST_PIN)==RESET && Init_Time == 2){Init_Time = 0;Vehicle.ODO = 0;Write_OdoMeter();CONFIG_BUZZ();}
+      else if (Init_Time == 1){CONFIG_BUZZ();}
       
       /* extract Gear */
       Gear();
@@ -125,11 +98,11 @@ int main(void)
       Cal_speed();    
       
       /* Every Second activity */
-      if(Flag_Second){GP_Timer();}
+      if(Flag_Second){GP_Timer();}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
       
       /* managing CAN,indication,Mode,1-wire */
       Management_Process();   
-            
+      
       /* Display Driver*/
       if(Flag_Display_Update)
       {
@@ -139,11 +112,6 @@ int main(void)
     }
   }
 }
-
-/**
-* @brief System Clock Configuration
-* @retval None
-*/
 
 /* USER CODE BEGIN 4 */
 

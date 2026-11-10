@@ -1,20 +1,20 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file    stm32g0xx_it.c
-  * @brief   Interrupt Service Routines.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2025 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+******************************************************************************
+* @file    stm32g0xx_it.c
+* @brief   Interrupt Service Routines.
+******************************************************************************
+* @attention
+*
+* Copyright (c) 2025 STMicroelectronics.
+* All rights reserved.
+*
+* This software is licensed under terms that can be found in the LICENSE file
+* in the root directory of this software component.
+* If no LICENSE file comes with this software, it is provided AS-IS.
+*
+******************************************************************************
+*/
 /* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
@@ -26,7 +26,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
- uint32_t odo_toggle=0;
+uint32_t odo_toggle=0;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -64,27 +64,27 @@ extern FDCAN_HandleTypeDef hfdcan1;
 /*           Cortex-M0+ Processor Interruption and Exception Handlers          */
 /******************************************************************************/
 /**
-  * @brief This function handles Non maskable interrupt.
-  */
+* @brief This function handles Non maskable interrupt.
+*/
 void NMI_Handler(void)
 {
   /* USER CODE BEGIN NonMaskableInt_IRQn 0 */
-
+  
   /* USER CODE END NonMaskableInt_IRQn 0 */
   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
-   while (1)
+  while (1)
   {
   }
   /* USER CODE END NonMaskableInt_IRQn 1 */
 }
 
 /**
-  * @brief This function handles Hard fault interrupt.
-  */
+* @brief This function handles Hard fault interrupt.
+*/
 void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
-
+  
   /* USER CODE END HardFault_IRQn 0 */
   while (1)
   {
@@ -94,62 +94,60 @@ void HardFault_Handler(void)
 }
 
 /**
-  * @brief This function handles System service call via SWI instruction.
-  */
+* @brief This function handles System service call via SWI instruction.
+*/
 void SVC_Handler(void)
 {
   /* USER CODE BEGIN SVC_IRQn 0 */
-
+  
   /* USER CODE END SVC_IRQn 0 */
   /* USER CODE BEGIN SVC_IRQn 1 */
-
+  
   /* USER CODE END SVC_IRQn 1 */
 }
 
 /**
-  * @brief This function handles Pendable request for system service.
-  */
+* @brief This function handles Pendable request for system service.
+*/
 void PendSV_Handler(void)
 {
   /* USER CODE BEGIN PendSV_IRQn 0 */
-
+  
   /* USER CODE END PendSV_IRQn 0 */
   /* USER CODE BEGIN PendSV_IRQn 1 */
-
+  
   /* USER CODE END PendSV_IRQn 1 */
 }
 
 /**
-  * @brief This function handles System tick timer.
-  */
+* @brief This function handles System tick timer.
+*/
 void SysTick_Handler(void)
 {
   Flag_mSec = SET;
   Flag_Display_Update = SET;
-  //if(!Flag_BatteryLow)                                                           
   
-    odo_toggle++;
-    if(odo_toggle > 5000) 
-    {
-      Tog_Time=5000;
-      odo_toggle = 0;
-      Flag_Odo_Toggle ^= 1;
-    }
-   
-    
-    
+  odo_toggle++;
+  if(odo_toggle > 5000) 
+  {
+    Tog_Time=5000;
+    odo_toggle = 0;
+    Flag_Odo_Toggle ^= 1;
+  }
+  
+  if(!Flag_BatteryLow)    
     Ticks++;
   //  if((Ticks % 2) == 0){Flag_Display_Update = SET;}
-    if((Ticks % 100) == 0)Flag_Send_Frame = SET;
-    if((Ticks % 500) == 0)Flag_TGL ^= 1;
-    if(Ticks > 999)
-    {
-      Ticks = 0;
-      Flag_Second = SET;
-      if(wait_Time)wait_Time--;
-      if(Init_Time)Init_Time--;
-    }
-    
+  if((Ticks % 100) == 0)Flag_Send_Frame = SET;
+  if((Ticks % 500) == 0)Flag_TGL ^= 1;
+  if(Ticks > 999)
+  {
+    Ticks = 0;
+    Flag_Second = SET;
+    if(wait_Time)wait_Time--;
+    if(Init_Time)Init_Time--;
+  }
+  
   HAL_IncTick();
 }
 
@@ -161,8 +159,8 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles TIM2 global interrupt.
-  */
+* @brief This function handles TIM2 global interrupt.
+*/
 
 void TIM2_IRQHandler(void)
 {
@@ -170,7 +168,7 @@ void TIM2_IRQHandler(void)
   {
     LL_TIM_ClearFlag_CC3(TIM2);                                                // Clear IC_flag
     
-  //  State_val=LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_2);                     //Check Current Stage Level                  
+    //  State_val=LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_2);                     //Check Current Stage Level                  
     
     if((State_val==1)&&(count==0))                                             //Read Timer at First Falling Edge                                           
     {
@@ -252,7 +250,7 @@ void TIM2_IRQHandler(void)
           else if((Off_time>((ONE_HIGH_TIME + ONE_LOW_TIME) / 2))&&(On_time<((ONE_HIGH_TIME + ONE_LOW_TIME) / 2)))//Check Condition against duty cycle for read 1 / 0 Bit
           {
             current_byte <<= 1;                                                 // Set Bit-0                    
-             bit_index++;
+            bit_index++;
             
             if(bit_index == 8)                                                  // Check Index 8 Bit/1 Byte Complete
             {
@@ -292,16 +290,16 @@ void TIM2_IRQHandler(void)
 
 
 /**
-  * @brief This function handles TIM16, FDCAN1_IT0 and FDCAN2_IT0 Interrupt.
-  */
+* @brief This function handles TIM16, FDCAN1_IT0 and FDCAN2_IT0 Interrupt.
+*/
 void TIM16_FDCAN_IT0_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM16_FDCAN_IT0_IRQn 0 */
-
+  
   /* USER CODE END TIM16_FDCAN_IT0_IRQn 0 */
   HAL_FDCAN_IRQHandler(&hfdcan1);
   /* USER CODE BEGIN TIM16_FDCAN_IT0_IRQn 1 */
-
+  
   /* USER CODE END TIM16_FDCAN_IT0_IRQn 1 */
 }
 
@@ -312,7 +310,7 @@ void EXTI4_15_IRQHandler(void)
   if (LL_EXTI_IsActiveFallingFlag_0_31(LL_EXTI_LINE_15) != RESET)
   {
     LL_EXTI_ClearFallingFlag_0_31(LL_EXTI_LINE_15);
- 
+    
     /* increase the button press Count */
     Button_Pressed++;
     if(Button_Pressed > 3)Button_Pressed = 0;

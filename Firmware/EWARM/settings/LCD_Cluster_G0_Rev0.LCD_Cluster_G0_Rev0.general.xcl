@@ -2,7 +2,7 @@ C:\iar\ewarm-9.70.2\arm\bin\armproc.dll
 
  C:\iar\ewarm-9.70.2\arm\bin\armstlink.dll
 
- "Y:\backup\Clusters\Colored Segmented\RCJ\Firmware\EWARM\LCD_Cluster_G0_Rev0\Exe\LCD_Cluster_G0_Rev0.out"
+ "Y:\Working\Current code\Clusters\Colored Segmented\RCJ-Cluster\Firmware\EWARM\LCD_Cluster_G0_Rev0\Exe\LCD_Cluster_G0_Rev0.out"
 
  --plugin=C:\iar\ewarm-9.70.2\arm\bin\armLibSupportUniversal.dll
 

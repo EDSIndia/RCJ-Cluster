@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\iar\ewarm-9.70.2\common\bin\cspybat" -f "Y:\backup\Clusters\Colored Segmented\RCJ\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.general.xcl" --backend -f "Y:\backup\Clusters\Colored Segmented\RCJ\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.driver.xcl" 
+& "C:\iar\ewarm-9.70.2\common\bin\cspybat" -f "Y:\Working\Current code\Clusters\Colored Segmented\RCJ-Cluster\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.general.xcl" --backend -f "Y:\Working\Current code\Clusters\Colored Segmented\RCJ-Cluster\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.driver.xcl" 
 }
 else
 {
-& "C:\iar\ewarm-9.70.2\common\bin\cspybat" -f "Y:\backup\Clusters\Colored Segmented\RCJ\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.general.xcl" --debug_file=$debugfile --backend -f "Y:\backup\Clusters\Colored Segmented\RCJ\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.driver.xcl" 
+& "C:\iar\ewarm-9.70.2\common\bin\cspybat" -f "Y:\Working\Current code\Clusters\Colored Segmented\RCJ-Cluster\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.general.xcl" --debug_file=$debugfile --backend -f "Y:\Working\Current code\Clusters\Colored Segmented\RCJ-Cluster\Firmware\EWARM\settings\LCD_Cluster_G0_Rev0.LCD_Cluster_G0_Rev0.driver.xcl" 
 }
